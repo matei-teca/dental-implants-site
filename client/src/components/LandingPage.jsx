@@ -16,7 +16,7 @@ const LandingPage = () => (
       </nav>
     </header>
     <section className="hero">
-      <h1>Restore Your Smile with Precision Dental Implants</h1>
+      <h1>Restore the Smiles with Precision Dental Implants</h1>
       <p>Your journey to a brighter, healthier smile begins here.</p>
       <button className="hero-button">Get Started</button>
     </section>

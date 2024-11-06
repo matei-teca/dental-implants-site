@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     width: 100%;
+    justify-content: center;
   }
   
   :root {
@@ -72,7 +73,7 @@
   /* Hero Section */
   .hero {
     background: url('/path-to-background.jpg') no-repeat center center/cover;
-    color: #fff;
+    color: #008080;
     text-align: center;
     padding: 100px 20px;
   }
@@ -95,6 +96,7 @@
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    width: 10%;
   }
   
   .hero-button:hover {
@@ -205,6 +207,10 @@
     .service-cards {
       flex-direction: column;
       align-items: center;
+    }
+
+    .hero-button {
+        width: 20%;
     }
   }
   
