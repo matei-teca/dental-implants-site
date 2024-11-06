@@ -1,5 +1,5 @@
-import React from 'react';
-import './LandingPage.css';
+import React from "react";
+import "./LandingPage.css";
 
 const LandingPage = () => (
   <div className="landing-page">
@@ -11,21 +11,38 @@ const LandingPage = () => (
           <li>Services</li>
           <li>Testimonials</li>
           <li>Contact</li>
-          <li><button className="cta-button">Book an Appointment</button></li>
+          <li>
+            <button className="cta-button">Book an Appointment</button>
+          </li>
         </ul>
       </nav>
     </header>
     <section className="hero">
-      <h1>Restore the Smiles with Precision Dental Implants</h1>
+      <h1>Restore your Smiles with Precision Dental Implants</h1>
       <p>Your journey to a brighter, healthier smile begins here.</p>
       <button className="hero-button">Get Started</button>
+    </section>
+    <section className="cta-section">
+      <div className="cta-content">
+        <h2>Looking to Provide Implant Solutions for Your Patients?</h2>
+        <p>
+          Partner with Dr. [Name] to ensure your patients receive expert care in
+          dental implantology. Our clinic specializes in seamless patient
+          referrals and high-quality implant treatments.
+        </p>
+        <button className="cta-button">Refer a Patient</button>
+      </div>
     </section>
     <section className="intro">
       <div className="intro-text">
         <h2>Meet Dr. [Name]</h2>
-        <p>With over X years of experience, Dr. [Name] specializes in creating tailored solutions for dental health, focusing on implantology and patient care.</p>
+        <p>
+          With over X years of experience, Dr. [Name] specializes in creating
+          tailored solutions for dental health, focusing on implantology and
+          patient care.
+        </p>
       </div>
-      <img src="/path-to-image.jpg" alt="Dr. [Name]" className="intro-image"/>
+      <img src="/path-to-image.jpg" alt="Dr. [Name]" className="intro-image" />
     </section>
     <section className="services">
       <h2>Our Services</h2>
