@@ -1,7 +1,7 @@
 // AboutPage.jsx
 import React from "react";
 import "./AboutPage.css";
-import Header from "./Header";
+import Header from "../components/Header";
 
 const AboutPage = () => (
   <div className="about-page">
