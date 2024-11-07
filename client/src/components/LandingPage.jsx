@@ -2,24 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import HeroCarousel from './HeroCarousel';
 import "./LandingPage.css";
+import Header from "./Header";
 
 const LandingPage = () => (
   <div className="landing-page">
-
-    <header className="header">
-      <div className="logo">Dental Implants</div>
-      <nav>
-        <ul>
-          <li><Link to="/about">About</Link></li>
-          <li>Services</li>
-          <li>Testimonials</li>
-          <li>Contact</li>
-          <li>
-            <button className="cta-button">Book an Appointment</button>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    
+    <Header />
 
     <section className="hero">
       <h1>Restore your Smiles with Precision Dental Implants. Let's make your patients smiles.</h1>
