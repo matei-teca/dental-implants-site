@@ -1,21 +1,25 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import HeroCarousel from '../components/HeroCarousel';
+import HeroCarousel from "../components/HeroCarousel";
 import "./LandingPage.css";
 import Header from "../components/Header";
 
 const LandingPage = () => (
   <div className="landing-page">
-    
     <Header />
 
     <section className="hero">
-      <h1>Restore your Smiles with Precision Dental Implants. Let's make your patients smiles.</h1>
+      <h1>
+        Restore your Smiles with Precision Dental Implants. Let's make your
+        patients smiles.
+      </h1>
       <p>Your journey to a brighter, healthier smile begins here.</p>
-      <button className="hero-button">Get Started</button>
+      <a href="#cta-section">
+        <button className="hero-button">Get Started</button>
+      </a>
     </section>
 
-    <section className="cta-section">
+    <section className="cta-section" id="cta-section">
       <div className="cta-content">
         <h2>Looking to Provide Implant Solutions for Your Patients?</h2>
         <p>
@@ -28,14 +32,22 @@ const LandingPage = () => (
     </section>
     <section className="intro">
       <div className="intro-text">
-        <h2><Link to="/about"> Meet Dr. Oana Curca</Link></h2>
+        <h2>
+          <Link to="/about"> Meet Dr. Oana Curca</Link>
+        </h2>
         <p>
           With over X years of experience, Dr. [Name] specializes in creating
           tailored solutions for dental health, focusing on implantology and
           patient care.
         </p>
       </div>
-      <Link to="/about"><img src="https://scontent.fotp7-2.fna.fbcdn.net/v/t1.18169-9/11226_10151311438532971_1775624136_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=53a332&_nc_eui2=AeEHhUjXrDCNFHD1To8ffpasg2v1g7OpqF-Da_WDs6moX14TdbXffqdLgyu6OrJKztSnT_NDkAiKAxUd_H-ymjeh&_nc_ohc=Evm4TPjmVXcQ7kNvgGRbRvd&_nc_zt=23&_nc_ht=scontent.fotp7-2.fna&oh=00_AYDKe0ej27ySPQnTu-s2DyWDzJnHb4HbQQDUx5Jnley8pA&oe=67545A70" alt="Dr. [Name]" className="intro-image" />      </Link>
+      <Link to="/about">
+        <img
+          src="https://scontent.fotp7-2.fna.fbcdn.net/v/t1.18169-9/11226_10151311438532971_1775624136_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=53a332&_nc_eui2=AeEHhUjXrDCNFHD1To8ffpasg2v1g7OpqF-Da_WDs6moX14TdbXffqdLgyu6OrJKztSnT_NDkAiKAxUd_H-ymjeh&_nc_ohc=Evm4TPjmVXcQ7kNvgGRbRvd&_nc_zt=23&_nc_ht=scontent.fotp7-2.fna&oh=00_AYDKe0ej27ySPQnTu-s2DyWDzJnHb4HbQQDUx5Jnley8pA&oe=67545A70"
+          alt="Dr. [Name]"
+          className="intro-image"
+        />{" "}
+      </Link>
     </section>
     <section className="services">
       <h2>Our Services</h2>
