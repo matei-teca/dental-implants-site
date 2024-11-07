@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import HeroCarousel from './HeroCarousel';
 import "./LandingPage.css";
 
@@ -9,7 +10,7 @@ const LandingPage = () => (
       <div className="logo">Dental Implants</div>
       <nav>
         <ul>
-          <li>About</li>
+          <li><Link to="/about">About</Link></li>
           <li>Services</li>
           <li>Testimonials</li>
           <li>Contact</li>
@@ -39,14 +40,14 @@ const LandingPage = () => (
     </section>
     <section className="intro">
       <div className="intro-text">
-        <h2>Meet Dr. [Name]</h2>
+        <h2><Link to="/about"> Meet Dr. Oana Curca</Link></h2>
         <p>
           With over X years of experience, Dr. [Name] specializes in creating
           tailored solutions for dental health, focusing on implantology and
           patient care.
         </p>
       </div>
-      <img src="https://scontent.fotp7-2.fna.fbcdn.net/v/t1.18169-9/11226_10151311438532971_1775624136_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=53a332&_nc_eui2=AeEHhUjXrDCNFHD1To8ffpasg2v1g7OpqF-Da_WDs6moX14TdbXffqdLgyu6OrJKztSnT_NDkAiKAxUd_H-ymjeh&_nc_ohc=Evm4TPjmVXcQ7kNvgGRbRvd&_nc_zt=23&_nc_ht=scontent.fotp7-2.fna&oh=00_AYDKe0ej27ySPQnTu-s2DyWDzJnHb4HbQQDUx5Jnley8pA&oe=67545A70" alt="Dr. [Name]" className="intro-image" />
+      <Link to="/about"><img src="https://scontent.fotp7-2.fna.fbcdn.net/v/t1.18169-9/11226_10151311438532971_1775624136_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=53a332&_nc_eui2=AeEHhUjXrDCNFHD1To8ffpasg2v1g7OpqF-Da_WDs6moX14TdbXffqdLgyu6OrJKztSnT_NDkAiKAxUd_H-ymjeh&_nc_ohc=Evm4TPjmVXcQ7kNvgGRbRvd&_nc_zt=23&_nc_ht=scontent.fotp7-2.fna&oh=00_AYDKe0ej27ySPQnTu-s2DyWDzJnHb4HbQQDUx5Jnley8pA&oe=67545A70" alt="Dr. [Name]" className="intro-image" />      </Link>
     </section>
     <section className="services">
       <h2>Our Services</h2>
