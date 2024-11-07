@@ -68,7 +68,7 @@
   /* Carousl Hero Section */
 
   .carousel {
-    color: #008080;
+    color: white;
     text-align: center;
     padding: 30px 20px;
   }
@@ -80,7 +80,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: black;
+    color: white;
+  }
+
+  .carousel-slide::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* dark overlay */
+    z-index: 1;
+    color: white;
   }
 
   .carousel-button {

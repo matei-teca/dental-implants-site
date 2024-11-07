@@ -109,16 +109,17 @@
 .about-image-section {
   margin-top: 40px;
   text-align: center;
-}
+  height: 100%;
 
 .about-image-section h2 {
   margin-bottom: 20px;
   color: #333;
 }
 
-.about-image {
+.discover-image {
   width: 100%;
-  max-width: 400px;
+  height: 70%;
+  padding: 30px;
   border-radius: 8px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
