@@ -72,10 +72,11 @@
   
   /* Hero Section */
   .hero {
-    background: url('/path-to-background.jpg') no-repeat center center/cover;
+    /* background: url('/path-to-background.jpg') no-repeat center center/cover; */
     color: #008080;
     text-align: center;
-    padding: 100px 20px;
+    padding: 50px 20px;
+    margin-top: 70px;
   }
   
   .hero h1 {
@@ -103,12 +104,45 @@
     background-color: #005f5f;
   }
 
-  .cta-section {
+
+  /* Carousl Hero Section */
+
+  .carousel {
+    color: #008080;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .carousel-slide {
+    background-size: cover;
+    background-position: center;
+    min-height: 400px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+
+  .carousel-button {
+    padding: 10px 20px;
+    background-color: #008080;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 10%;
+  }
+
+
+/* cta Section */
+.cta-section {
     background: url('https://artisticsmilesdentistry.com/app/uploads/2018/08/shutterstock_773757976-1-500x334.jpg') no-repeat center center/cover;
     position: relative;
     color: #fff;
     text-align: center;
     padding: 80px 20px;
+    margin-top: 70px;
   }
   
   .cta-section::before {

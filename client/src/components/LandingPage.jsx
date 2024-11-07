@@ -1,8 +1,10 @@
 import React from "react";
+import HeroCarousel from './HeroCarousel';
 import "./LandingPage.css";
 
 const LandingPage = () => (
   <div className="landing-page">
+
     <header className="header">
       <div className="logo">Dental Implants</div>
       <nav>
@@ -17,11 +19,15 @@ const LandingPage = () => (
         </ul>
       </nav>
     </header>
+
     <section className="hero">
-      <h1>Restore your Smiles with Precision Dental Implants</h1>
+      <h1>Restore your Smiles with Precision Dental Implants. Restore your Patients Smiles.</h1>
       <p>Your journey to a brighter, healthier smile begins here.</p>
       <button className="hero-button">Get Started</button>
     </section>
+
+    <HeroCarousel />
+
     <section className="cta-section">
       <div className="cta-content">
         <h2>Looking to Provide Implant Solutions for Your Patients?</h2>
