@@ -1,7 +1,7 @@
 // AboutPage.jsx
 import React from "react";
 import "./AboutPage.css";
-import Header from "./Header";
+import Header from "../components/Header";
 
 const AboutPage = () => (
   <div className="about-page">
@@ -13,7 +13,7 @@ const AboutPage = () => (
         className="about-image"
       />
       <div className="about-text">
-        <h1>Meet Dr. [Your Mother's Name]</h1>
+        <h1>Meet Dr. Oana Curca </h1>
         <p>
           Dr. [Name] has dedicated over [X years] to advancing dental health
           through implantology and patient-centered care. With specialized
@@ -46,11 +46,11 @@ const AboutPage = () => (
     </section>
 
     <section className="about-image-section">
-      <h2>Meet Dr. [Your Mother's Name]</h2>
+      <h2>Discover more about Dr. Oana</h2>
       <img
         src="https://roger24.de/sites/default/files/userimages/doctors/oanairinacurca.jpg"
         alt="Dr. [Name] Portrait"
-        className="about-image"
+        className="discover-image"
       />
     </section>
 

@@ -1,11 +1,11 @@
 // App.js
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import LandingPage from './components/LandingPage';
-import AboutPage from './components/AboutPage';
-// import Services from './components/Services';
-// import Testimonials from './components/Testimonials';
-// import Contact from './components/Contact';
+import LandingPage from './pages/LandingPage';
+import AboutPage from './pages/AboutPage';
+// import Services from './pages/Services';
+// import Testimonials from './pages/Testimonials';
+// import Contact from './pages/Contact';
 
 function App() {
   return (
