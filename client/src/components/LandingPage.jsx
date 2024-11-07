@@ -21,19 +21,17 @@ const LandingPage = () => (
     </header>
 
     <section className="hero">
-      <h1>Restore your Smiles with Precision Dental Implants. Restore your Patients Smiles.</h1>
+      <h1>Restore your Smiles with Precision Dental Implants. Let's make your patients smiles.</h1>
       <p>Your journey to a brighter, healthier smile begins here.</p>
       <button className="hero-button">Get Started</button>
     </section>
-
-    <HeroCarousel />
 
     <section className="cta-section">
       <div className="cta-content">
         <h2>Looking to Provide Implant Solutions for Your Patients?</h2>
         <p>
           Partner with Dr. [Name] to ensure your patients receive expert care in
-          dental implantology. Our clinic specializes in seamless patient
+          dental implantology. Our service specializes in seamless patient
           referrals and high-quality implant treatments.
         </p>
         <button className="cta-button">Refer a Patient</button>
@@ -48,7 +46,7 @@ const LandingPage = () => (
           patient care.
         </p>
       </div>
-      <img src="/path-to-image.jpg" alt="Dr. [Name]" className="intro-image" />
+      <img src="https://scontent.fotp7-2.fna.fbcdn.net/v/t1.18169-9/11226_10151311438532971_1775624136_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=53a332&_nc_eui2=AeEHhUjXrDCNFHD1To8ffpasg2v1g7OpqF-Da_WDs6moX14TdbXffqdLgyu6OrJKztSnT_NDkAiKAxUd_H-ymjeh&_nc_ohc=Evm4TPjmVXcQ7kNvgGRbRvd&_nc_zt=23&_nc_ht=scontent.fotp7-2.fna&oh=00_AYDKe0ej27ySPQnTu-s2DyWDzJnHb4HbQQDUx5Jnley8pA&oe=67545A70" alt="Dr. [Name]" className="intro-image" />
     </section>
     <section className="services">
       <h2>Our Services</h2>
@@ -63,6 +61,9 @@ const LandingPage = () => (
         </div>
       </div>
     </section>
+
+    <HeroCarousel />
+
     <footer className="footer">
       <p>&copy; {new Date().getFullYear()} Dental Implants Clinic</p>
       <p>Contact us at: (555) 555-5555</p>
