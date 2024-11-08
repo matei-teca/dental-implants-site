@@ -10,6 +10,12 @@
     margin-bottom: 20px;
   }
   
+  .testimonials-section h2 a {
+    text-decoration: none;
+    color:#008080;
+    font-weight: bold;
+  }
+
   .testimonials {
     display: flex;
     flex-direction: column;

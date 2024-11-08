@@ -12,7 +12,7 @@
   gap: 165px; /* Increased gap between links */
   list-style: none;
   padding: 0;
-  margin-bottom: 25px; /* Space between nav and footer text */
+  margin-bottom: 75px; /* Space between nav and footer text */
 }
 
 .footer-nav ul li {

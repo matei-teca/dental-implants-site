@@ -177,8 +177,8 @@
   }
   
   .intro-text {
-    max-width: 600px;
-    margin-right: 50%;
+    max-width: 900px;
+    margin-right: 10%;
   }
   
   .intro h2 {
@@ -194,6 +194,7 @@
     width: 100%;
     max-width: 300px;
     border-radius: 10px;
+    margin-left: 30%;
   }
   
   /* Services Section */
@@ -205,6 +206,7 @@
   .services h2 {
     font-size: 2rem;
     margin-bottom: 30px;
+    color:#008080;
   }
   
   .service-cards {

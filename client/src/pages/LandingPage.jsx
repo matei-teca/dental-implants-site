@@ -4,7 +4,7 @@ import HeroCarousel from "../components/HeroCarousel";
 import "./styles/LandingPage.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import TestimonialsSection from "../components/TestimonilasSection";
+import TestimonialsSection from "../components/TestimonialsSection";
 
 const LandingPage = () => (
   <div className="landing-page">
