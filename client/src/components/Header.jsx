@@ -12,7 +12,7 @@ const Header = () => (
     alt="Home Icon" 
     style = {{width: "20px", marginRight: "10px"}}
   /> 
-  Dental Implants
+  O.C. Dental Implants
 </Link></div>
 
 <nav>
@@ -20,7 +20,7 @@ const Header = () => (
     <li><Link to="/about">About</Link></li>
     <li>Services</li>
     <li>Testimonials</li>
-    <li>Contact</li>
+    <li><Link to="/contact">Contact</Link></li>
     <li>
       <button className="cta-button">Book an Appointment</button>
     </li>

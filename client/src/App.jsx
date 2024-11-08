@@ -5,7 +5,7 @@ import LandingPage from './pages/LandingPage';
 import AboutPage from './pages/AboutPage';
 // import Services from './pages/Services';
 // import Testimonials from './pages/Testimonials';
-// import Contact from './pages/Contact';
+import Contact from './pages/ContactPage';
 
 function App() {
   return (
@@ -15,8 +15,8 @@ function App() {
           <Route path="/" element={<LandingPage />} />
           <Route path="/about" element={<AboutPage />} />
           {/* <Route path="/services" element={<Services />} />
-          <Route path="/testimonials" element={<Testimonials />} />
-          <Route path="/contact" element={<Contact />} /> */}
+          <Route path="/testimonials" element={<Testimonials />} /> */}
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
     </Router>
