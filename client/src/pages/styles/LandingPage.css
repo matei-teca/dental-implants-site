@@ -1,25 +1,6 @@
-/* General Styles */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    justify-content: center;
-  }
-  
-  :root {
-    font-family: Arial, sans-serif;
-    color-scheme: light dark;
-  }
-  
-  body {
-    margin: 0;
-    background-color: #f0f4f8;
-    color: #333;
-    display: flex;
-    min-width: 320px;
-    min-height: 100vh;
-  }
+/* title color #008080; */
+
+
   
   /* Landing Page Styles */
   .landing-page {
