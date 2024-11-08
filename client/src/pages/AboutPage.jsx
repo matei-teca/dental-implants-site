@@ -56,7 +56,7 @@ const AboutPage = () => (
       />
     </section>
 
-    <section>
+    <section className="gallery-section">
       <h2>Gallery</h2>
       <div className="image-gallery">
         <img
