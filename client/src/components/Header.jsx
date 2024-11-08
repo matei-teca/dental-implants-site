@@ -20,7 +20,7 @@ const Header = () => (
     <li><Link to="/about">About</Link></li>
     <li><Link to="/services">Services</Link></li>
     <li><Link to="/testimonials">Testimonials</Link></li>
-    <li><Link to="/showcases">Show Cases</Link></li>
+    <li><Link to="/showcases">ShowCases</Link></li>
     <li><Link to="/contact">Contact</Link></li>
     <li>
       <button className="cta-button"><Link to="/contact">Book an Appointment</Link></button>
