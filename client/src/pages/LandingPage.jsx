@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import HeroCarousel from "../components/HeroCarousel";
 import "./LandingPage.css";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 const LandingPage = () => (
   <div className="landing-page">
@@ -64,11 +65,7 @@ const LandingPage = () => (
     </section>
 
     <HeroCarousel />
-
-    <footer className="footer">
-      <p>&copy; {new Date().getFullYear()} Dental Implants Clinic</p>
-      <p>Contact us at: (555) 555-5555</p>
-    </footer>
+    <Footer  />
   </div>
 );
 

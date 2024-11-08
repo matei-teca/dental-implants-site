@@ -2,8 +2,10 @@
 import React from "react";
 import "./AboutPage.css";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 const AboutPage = () => (
+  <div>
   <div className="about-page">
     <Header />
     <section className="about-hero">
@@ -76,6 +78,9 @@ const AboutPage = () => (
       </div>
     </section>
   </div>
+
+<Footer />
+</div>
 );
 
 export default AboutPage;

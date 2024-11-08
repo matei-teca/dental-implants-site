@@ -1,8 +1,12 @@
 import React from "react";
 import "./ContactPage.css";
+import Header from "../components/Header";
 
 const ContactPage = () => (
   <div className="contact-page">
+
+    <Header />
+
     <header className="contact-header">
       <h1>Contact Us</h1>
       <p>We're here to answer any questions and help you start your journey to a healthier smile.</p>
