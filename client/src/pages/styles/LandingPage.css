@@ -160,6 +160,11 @@
   .cta-button:hover {
     background-color: #005f5f;
   }
+
+  .cta-button a {
+    color: #fff;
+    text-decoration: none;
+  }
   
   
   /* Intro Section */

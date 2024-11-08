@@ -22,7 +22,7 @@ const Header = () => (
     <li><Link to="/testimonials">Testimonials</Link></li>
     <li><Link to="/contact">Contact</Link></li>
     <li>
-      <button className="cta-button">Book an Appointment</button>
+      <button className="cta-button"><Link to="/contact">Book an Appointment</Link></button>
     </li>
   </ul>
 </nav>

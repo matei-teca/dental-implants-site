@@ -1,9 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./styles/TestimonialsSection.css";
 
 const TestimonialsSection = () => (
   <section className="testimonials-section">
-    <h2>What Our Patients Say</h2>
+    <h2><Link to="/testimonials">What Our Patients Say</Link></h2>
+
     <div className="testimonials">
       <blockquote>
         <p>"Dr. Smith transformed my smile with incredible attention to detail!"</p>
