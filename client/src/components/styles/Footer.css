@@ -1,10 +1,36 @@
- 
- /* Footer Styles */
-  .footer {
-    padding: 20px;
-    text-align: center;
-    background-color: #333;
-    color: #fff !important;
-    border-top: 1px solid #444;
-    font-size: 0.9rem;
-  }
+.footer {
+  padding: 30px 0;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
+.footer-nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 165px; /* Increased gap between links */
+  list-style: none;
+  padding: 0;
+  margin-bottom: 25px; /* Space between nav and footer text */
+}
+
+.footer-nav ul li {
+  margin: 0;
+  width: 30px;
+}
+
+.footer-home-icon {
+  width: 24px; /* Slightly larger for emphasis */
+  filter: invert(100%); /* Keeps the icon white */
+  margin-right: 10px; /* Adds space to the icon’s right */
+}
+
+.footer p {
+  margin: 8px 0;
+  font-size: 0.9rem; /* Slightly smaller font for subtlety */
+}
+
+.footer p:first-of-type {
+  font-weight: bold; /* Emphasize the copyright */
+}
