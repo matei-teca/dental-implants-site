@@ -4,6 +4,7 @@ import HeroCarousel from "../components/HeroCarousel";
 import "./styles/LandingPage.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import TestimonialsSection from "../components/TestimonilasSection";
 
 const LandingPage = () => (
   <div className="landing-page">
@@ -28,7 +29,8 @@ const LandingPage = () => (
           dental implantology. Our service specializes in seamless patient
           referrals and high-quality implant treatments.
         </p>
-        <button className="cta-button">Refer a Patient</button>
+       
+        <button className="cta-button"><Link to="/contact">Refer a Patient</Link></button>
       </div>
     </section>
     <section className="intro">
@@ -65,7 +67,9 @@ const LandingPage = () => (
     </section>
 
     <HeroCarousel />
+    <TestimonialsSection />
     <Footer  />
+
   </div>
 );
 
