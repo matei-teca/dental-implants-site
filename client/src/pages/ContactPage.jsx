@@ -1,5 +1,5 @@
 import React from "react";
-import "./ContactPage.css";
+import "./styles/ContactPage.css";
 import Header from "../components/Header";
 
 const ContactPage = () => (

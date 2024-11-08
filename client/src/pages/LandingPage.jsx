@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import HeroCarousel from "../components/HeroCarousel";
-import "./LandingPage.css";
+import "./styles/LandingPage.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
