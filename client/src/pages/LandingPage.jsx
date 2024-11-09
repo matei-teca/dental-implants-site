@@ -7,6 +7,7 @@ import Footer from "../components/Footer";
 import TestimonialsSection from "../components/TestimonialsSection";
 
 const LandingPage = () => (
+  <>
   <div className="landing-page">
     <Header />
 
@@ -68,9 +69,11 @@ const LandingPage = () => (
 
     <HeroCarousel />
     <TestimonialsSection />
-    <Footer  />
 
   </div>
+
+<Footer />
+</>
 );
 
 export default LandingPage;
