@@ -1,5 +1,3 @@
 # dental-implants-site
 
-sketch 1
-
-<img width="1440" alt="Screenshot 2024-11-07 at 13 51 33" src="https://github.com/user-attachments/assets/d03e9322-0e55-4bf0-8a50-346b8debbcbc">
+![screencapture-localhost-5173-2024-11-09-11_29_02](https://github.com/user-attachments/assets/c9257a32-004d-4157-9933-d73c3894607b)
