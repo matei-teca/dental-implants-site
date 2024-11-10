@@ -1,10 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import HeroCarousel from "../components/HeroCarousel";
-import "./LandingPage.css";
+import "./styles/LandingPage.css";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
+import TestimonialsSection from "../components/TestimonialsSection";
 
 const LandingPage = () => (
+  <>
   <div className="landing-page">
     <Header />
 
@@ -27,7 +30,8 @@ const LandingPage = () => (
           dental implantology. Our service specializes in seamless patient
           referrals and high-quality implant treatments.
         </p>
-        <button className="cta-button">Refer a Patient</button>
+       
+        <button className="cta-button"><Link to="/contact">Refer a Patient</Link></button>
       </div>
     </section>
     <section className="intro">
@@ -64,12 +68,12 @@ const LandingPage = () => (
     </section>
 
     <HeroCarousel />
+    <TestimonialsSection />
 
-    <footer className="footer">
-      <p>&copy; {new Date().getFullYear()} Dental Implants Clinic</p>
-      <p>Contact us at: (555) 555-5555</p>
-    </footer>
   </div>
+
+<Footer />
+</>
 );
 
 export default LandingPage;

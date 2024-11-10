@@ -1,9 +1,11 @@
 // AboutPage.jsx
 import React from "react";
-import "./AboutPage.css";
+import "./styles/AboutPage.css";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 const AboutPage = () => (
+  <div>
   <div className="about-page">
     <Header />
     <section className="about-hero">
@@ -54,7 +56,7 @@ const AboutPage = () => (
       />
     </section>
 
-    <section>
+    <section className="gallery-section">
       <h2>Gallery</h2>
       <div className="image-gallery">
         <img
@@ -76,6 +78,9 @@ const AboutPage = () => (
       </div>
     </section>
   </div>
+
+<Footer />
+</div>
 );
 
 export default AboutPage;

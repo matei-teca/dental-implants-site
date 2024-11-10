@@ -1,25 +1,6 @@
-/* General Styles */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    justify-content: center;
-  }
-  
-  :root {
-    font-family: Arial, sans-serif;
-    color-scheme: light dark;
-  }
-  
-  body {
-    margin: 0;
-    background-color: #f0f4f8;
-    color: #333;
-    display: flex;
-    min-width: 320px;
-    min-height: 100vh;
-  }
+/* title color #008080; */
+
+
   
   /* Landing Page Styles */
   .landing-page {
@@ -28,6 +9,7 @@
     background-color: #f0f4f8;
     max-width: 1280px;
     margin: 0 auto;
+    margin-top: 20px;
   }
     
   /* Hero Section */
@@ -111,10 +93,10 @@
 .cta-section {
     background: url('https://artisticsmilesdentistry.com/app/uploads/2018/08/shutterstock_773757976-1-500x334.jpg') no-repeat center center/cover;
     position: relative;
-    color: #fff;
     text-align: center;
     padding: 80px 20px;
     margin-top: 70px;
+    color: #fff;
   }
   
   .cta-section::before {
@@ -138,6 +120,7 @@
   .cta-content h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
+    color: #fff !important;
   }
   
   .cta-content p {
@@ -159,6 +142,11 @@
   .cta-button:hover {
     background-color: #005f5f;
   }
+
+  .cta-button a {
+    color: #fff;
+    text-decoration: none;
+  }
   
   
   /* Intro Section */
@@ -171,8 +159,8 @@
   }
   
   .intro-text {
-    max-width: 600px;
-    margin-right: 50%;
+    max-width: 900px;
+    margin-right: 10%;
   }
   
   .intro h2 {
@@ -188,6 +176,7 @@
     width: 100%;
     max-width: 300px;
     border-radius: 10px;
+    margin-left: 30%;
   }
   
   /* Services Section */
@@ -199,6 +188,7 @@
   .services h2 {
     font-size: 2rem;
     margin-bottom: 30px;
+    color:#008080;
   }
   
   .service-cards {
@@ -231,15 +221,6 @@
     font-size: 1rem;
   }
   
-  /* Footer Styles */
-  .footer {
-    padding: 20px;
-    text-align: center;
-    background-color: #333;
-    color: #fff;
-    border-top: 1px solid #444;
-    font-size: 0.9rem;
-  }
   
   /* Responsive Adjustments */
   @media (max-width: 768px) {
