@@ -239,3 +239,24 @@
   }
 
   
+  @media (max-width: 768px) {
+    .hero-button {
+      width: auto;
+      padding: 10px 20px;
+      font-size: 1rem;
+    }
+  }
+  
+
+  @media (max-width: 480px) {
+    .hero h1 {
+      font-size: 1.8rem;
+    }
+    .hero p {
+      margin-bottom: 10px;
+    }
+    .hero-button {
+      padding: 10px 15px;
+    }
+  }
+  

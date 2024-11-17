@@ -143,3 +143,13 @@ nav ul {
     gap: 0.5rem;
   }
 }
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+  nav.active ul {
+    display: flex;
+    flex-direction: column;
+  }
+}

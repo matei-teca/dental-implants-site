@@ -64,5 +64,13 @@
     }
   }
 
+  @media (max-width: 480px) {
+    .testimonial-card {
+      padding: 10px;
+      font-size: 0.9rem;
+    }
+  }
+  
+  
   
   

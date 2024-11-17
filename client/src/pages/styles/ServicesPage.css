@@ -56,4 +56,10 @@
 }
 
 
+@media (max-width: 480px) {
+  .service-card {
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+  }
+}
 
