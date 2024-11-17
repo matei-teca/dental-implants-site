@@ -1,8 +1,6 @@
 // ShowCasesPage.js
 import React from "react";
 import "./styles/ShowCasesPage.css";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 
 const cases = [
     {
@@ -24,8 +22,6 @@ const cases = [
   
   const ShowCasesPage = () => {
     return (
-        <>
-        <Header />
       <div className="showcases-page">
         <h1>Successful Cases Exemplified</h1>
         <div className="case-cards">
@@ -40,8 +36,6 @@ const cases = [
           ))}
         </div>
       </div>
-      <Footer />
-      </>
     );
   };
   

@@ -1,13 +1,9 @@
 // AboutPage.jsx
 import React from "react";
 import "./styles/AboutPage.css";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 
 const AboutPage = () => (
-  <div>
   <div className="about-page">
-    <Header />
     <section className="about-hero">
       <img
         src="https://scontent.fotp7-2.fna.fbcdn.net/v/t1.18169-9/11226_10151311438532971_1775624136_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=53a332&_nc_eui2=AeEHhUjXrDCNFHD1To8ffpasg2v1g7OpqF-Da_WDs6moX14TdbXffqdLgyu6OrJKztSnT_NDkAiKAxUd_H-ymjeh&_nc_ohc=Evm4TPjmVXcQ7kNvgGRbRvd&_nc_zt=23&_nc_ht=scontent.fotp7-2.fna&oh=00_AYDKe0ej27ySPQnTu-s2DyWDzJnHb4HbQQDUx5Jnley8pA&oe=67545A70"
@@ -78,9 +74,6 @@ const AboutPage = () => (
       </div>
     </section>
   </div>
-
-<Footer />
-</div>
 );
 
 export default AboutPage;

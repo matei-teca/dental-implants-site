@@ -2,15 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import HeroCarousel from "../components/HeroCarousel";
 import "./styles/LandingPage.css";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 import TestimonialsSection from "../components/TestimonialsSection";
 
 const LandingPage = () => (
-  <>
   <div className="landing-page">
-    <Header />
-
     <section className="hero">
       <h1>
         Restore your Smiles with Precision Dental Implants. Let's make your
@@ -71,9 +66,6 @@ const LandingPage = () => (
     <TestimonialsSection />
 
   </div>
-
-<Footer />
-</>
 );
 
 export default LandingPage;
