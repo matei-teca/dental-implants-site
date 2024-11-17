@@ -23,7 +23,7 @@ const Footer = () => (
       </ul>
     </div>
     <p>&copy; {new Date().getFullYear()} O.C. Dental Implants</p>
-    <p>Contact us at: (555) 555-5555</p>
+    <p>Contact us at: oana.teca@gmail.com</p>
   </footer>
 );
 

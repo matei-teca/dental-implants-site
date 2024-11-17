@@ -34,34 +34,53 @@
   width: 30px;
 }
 
+.footer-nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
 .footer-home-icon {
-  width: 24px; /* Slightly larger for emphasis */
-  filter: invert(100%); /* Keeps the icon white */
-  margin-right: 10px; /* Adds space to the icon’s right */
+  width: 24px; 
+  filter: invert(100%); 
+  margin-right: 10px;
 }
 
 .footer p {
   margin: 8px 0;
-  font-size: 0.9rem; /* Slightly smaller font for subtlety */
+  font-size: 0.9rem;
 }
 
 .footer p:first-of-type {
-  font-weight: bold; /* Emphasize the copyright */
+  font-weight: bold;
 }
 
-
-
-@media (max-width: 768px) {
+@media (max-width: 1195px) {
   .footer-nav ul {
     flex-direction: column;
     gap: 0.5rem;
+    width: 50px;
+    margin-left: 50px;
+  }
+
+  .footer-nav ul li a {
+    text-decoration: underline 1px;
   }
 }
-
 
 @media (max-width: 480px) {
   .footer-nav ul {
     flex-direction: column;
     gap: 10px;
+    width: 50px;
+    margin-left: 30px;
+  }
+
+  .footer-nav ul {
+    margin-bottom: 25px; /* Reduce space between nav and the text below */
+  }
+  
+  .footer p {
+    margin-top: 5px;
   }
 }
