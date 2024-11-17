@@ -123,3 +123,17 @@
   background-color: #005f5f;
   transform: translateY(-3px);
 }
+
+
+@media (max-width: 768px) {
+  .contact-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .contact-info, .contact-form-section {
+    max-width: 90%;
+    padding: 1rem;
+  }
+}
+
+

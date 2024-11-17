@@ -221,36 +221,21 @@
     font-size: 1rem;
   }
   
-  
-  /* Responsive Adjustments */
+
   @media (max-width: 768px) {
-    .header {
-      flex-direction: column;
-      gap: 10px;
-    }
-  
-    .hero h1 {
-      font-size: 2.5rem;
+    .hero {
+      padding: 1rem;
     }
   
     .intro {
       flex-direction: column;
-      padding: 20px;
       text-align: center;
-    }
-  
-    .intro-image {
-      margin-top: 20px;
-      max-width: 200px;
     }
   
     .service-cards {
       flex-direction: column;
-      align-items: center;
-    }
-
-    .hero-button {
-        width: 20%;
+      gap: 1rem;
     }
   }
+
   
