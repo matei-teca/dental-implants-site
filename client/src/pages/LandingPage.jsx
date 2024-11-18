@@ -65,7 +65,16 @@ const LandingPage = () => (
       </div>
     </section>
 
-    <HeroCarousel />
+    <section className="about-image-section">
+      <h2>Discover more about Dr. Oana</h2>
+      <img
+        src="https://roger24.de/sites/default/files/userimages/doctors/oanairinacurca.jpg"
+        alt="Dr. [Name] Portrait"
+        className="discover-image"
+      />
+    </section>
+    {/* <HeroCarousel /> */}
+
     <TestimonialsSection />
     <br/>
     <br/>
