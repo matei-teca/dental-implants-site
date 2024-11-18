@@ -9,9 +9,9 @@ const LandingPage = () => (
     <section className="hero">
       <h1>
         Restore your Smiles with Precision Dental Implants. Let's make your
-        patients smiles.
+        patients' smiles.
       </h1>
-      <p>Your journey to a brighter, healthier smile begins here.</p>
+      <p>Your solution to a precision dental implant begins here.</p>
       <a href="#cta-section">
         <button className="hero-button">Get Started</button>
       </a>
@@ -22,8 +22,7 @@ const LandingPage = () => (
         <h2>Looking to Provide Implant Solutions for Your Patients?</h2>
         <p>
           Partner with Dr. [Name] to ensure your patients receive expert care in
-          dental implantology. Our service specializes in seamless patient
-          referrals and high-quality implant treatments.
+          dental implantology. Our service specializes in high-quality implant treatments.
         </p>
        
         <button className="cta-button"><Link to="/contact">Refer a Patient</Link></button>
@@ -59,11 +58,17 @@ const LandingPage = () => (
           <h3>Multiple Teeth Implants</h3>
           <p>For a seamless, natural-looking smile.</p>
         </div>
+        <div className="card">
+          <h3>Multiple Teeth Implants</h3>
+          <p>For a seamless, natural-looking smile.</p>
+        </div>
       </div>
     </section>
 
     <HeroCarousel />
     <TestimonialsSection />
+    <br/>
+    <br/>
 
   </div>
 );
