@@ -66,6 +66,17 @@
   }
 
   @media (max-width: 480px) {
+
+    .hero-section {
+      padding: 20px 20px;
+      margin-block: 10px;
+    }
+
+    .testimonials-content {
+      margin-top: 40px;
+      gap: 35px;
+    }
+    
     .testimonial-card {
       padding: 10px;
       font-size: 0.9rem;
