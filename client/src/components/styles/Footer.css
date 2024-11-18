@@ -55,6 +55,11 @@
   font-weight: bold;
 }
 
+.footer-nav ul li a.active {
+  color: white;
+  border-bottom: 2px solid white; /* Persistent underline for active links */
+}
+
 @media (max-width: 1195px) {
   .footer-nav ul {
     flex-direction: column;

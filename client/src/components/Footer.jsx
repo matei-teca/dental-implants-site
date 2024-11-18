@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./styles/Footer.css";
 
 const Footer = () => (
@@ -7,19 +7,19 @@ const Footer = () => (
     <div className="footer-nav">
       <ul>
         <li>
-          <Link to="/">
+          <NavLink to="/">
             <img 
               src="https://static.thenounproject.com/png/610387-200.png" 
               alt="Home Icon" 
               className="footer-home-icon"
             />
-          </Link>
+          </NavLink>
         </li>
-        <li><Link to="/about">About</Link></li>
-        <li><Link to="/services">Services</Link></li>
-        <li><Link to="/testimonials">Testimonials</Link></li>
-        <li><Link to="/showcases">ShowCases</Link></li>
-        <li><Link to="/contact">Contact</Link></li>
+        <li><NavLink to="/about">About</NavLink></li>
+        <li><NavLink to="/services">Services</NavLink></li>
+        <li><NavLink to="/testimonials">Testimonials</NavLink></li>
+        <li><NavLink to="/showcases">ShowCases</NavLink></li>
+        <li><NavLink to="/contact">Contact</NavLink></li>
       </ul>
     </div>
     <p>&copy; {new Date().getFullYear()} O.C. Dental Implants</p>

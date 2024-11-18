@@ -87,7 +87,6 @@ nav ul li a:hover {
   border-bottom: 2px solid #008080; /* Underline on hover */
 }
 
-/* Active link styles */
 nav ul li a.active {
   color: #008080;
   border-bottom: 2px solid #008080; /* Persistent underline */
