@@ -71,6 +71,30 @@ nav ul li a:hover {
   transform: scale(1.05); /* Adds slight zoom effect to links on hover */
 }
 
+/* Active link styles */
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.3s ease;
+  border-bottom: 2px solid transparent; /* Invisible underline */
+}
+
+nav ul li a:hover {
+  color: #008080;
+  transform: scale(1.05);
+  border-bottom: 2px solid #008080; /* Underline on hover */
+}
+
+/* Active link styles */
+nav ul li a.active {
+  color: #008080;
+  border-bottom: 2px solid #008080; /* Persistent underline */
+  transform: none; /* Ensures no hover scaling */
+}
+
+
 .cta-button {
   padding: 10px 25px;
   background-color: #008080;

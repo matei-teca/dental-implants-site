@@ -1,36 +1,36 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./styles/Header.css";
 
 const Header = () => (
   <header className="header">
     <div className="logo">
-      <Link to="/">
+      <NavLink to="/">
         <img
           src="https://static.thenounproject.com/png/610387-200.png"
           alt="Home Icon"
           style={{ width: "20px", marginRight: "10px" }}
         />
         O.C. Dental Implants
-      </Link>
+      </NavLink>
     </div>
 
     <nav>
       <ul>
         <li>
-          <Link to="/about">About</Link>
+          <NavLink to="/about">About</NavLink>
         </li>
         <li>
-          <Link to="/services">Services</Link>
+          <NavLink to="/services">Services</NavLink>
         </li>
         <li>
-          <Link to="/testimonials">Testimonials</Link>
+          <NavLink to="/testimonials">Testimonials</NavLink>
         </li>
         <li>
-          <Link to="/showcases">ShowCases</Link>
+          <NavLink to="/showcases">ShowCases</NavLink>
         </li>
         <li>
-          <Link to="/contact">Contact</Link>
+          <NavLink to="/contact">Contact</NavLink>
         </li>
         <li>
           <button className="cta-button">
