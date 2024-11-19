@@ -15,7 +15,7 @@
 
 .logo {
   width: 300px;
-  margin-right: 100px;;
+  margin-right: 100px;
 }
 
 .logo {
@@ -94,10 +94,9 @@ nav ul li a.active {
 }
 
 
-.cta-button {
+.header-appointment-button {
   padding: 10px 25px;
   background-color: #008080;
-  color: #fff;
   border: none;
   border-radius: 8px;
   font-weight: 600;
@@ -106,13 +105,17 @@ nav ul li a.active {
   transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.cta-button:hover {
+.header-appointment-button a {
+  color: #fff;
+}
+
+.header-appointment-button:hover {
   background-color: #005f5f;
   transform: scale(1.05);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.cta-button:focus {
+.header-appointment-button:focus {
   outline: none;
   box-shadow: 0px 0px 0px 2px #005f5f;
 }
@@ -145,7 +148,7 @@ nav ul {
     gap: 0.5rem;
   }
 
-  .cta-button {
+  .header-appointment-button {
     width: 40vw;
     margin-left: 30%;
     padding: 15px 0;
@@ -155,4 +158,9 @@ nav ul {
 }
 
 
-/* @media (max-width: 480px) {} */
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1.25rem;
+    margin-left: -10%;
+  }
+}

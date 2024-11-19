@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import HeroCarousel from "../components/HeroCarousel";
 import "./styles/LandingPage.css";
 import TestimonialsSection from "../components/TestimonialsSection";
@@ -12,9 +12,9 @@ const LandingPage = () => (
         patients' smiles.
       </h1>
       <p>Your solution to a precision dental implant begins here.</p>
-      <a href="#cta-section">
+      <NavLink to="/services">
         <button className="hero-button">Get Started</button>
-      </a>
+      </NavLink>
     </section>
 
     <section className="cta-section" id="cta-section">
@@ -25,13 +25,13 @@ const LandingPage = () => (
           dental implantology. Our service specializes in high-quality implant treatments.
         </p>
        
-        <button className="cta-button"><Link to="/contact">Refer a Patient</Link></button>
+        <NavLink to="/contact"><button className="cta-button">Refer a Patient</button></NavLink>
       </div>
     </section>
     <section className="intro">
       <div className="intro-text">
         <h2>
-          <Link to="/about"> Meet Dr. Oana Curca</Link>
+          <NavLink to="/about"> Meet Dr. Oana Curca</NavLink>
         </h2>
         <p>
           With over X years of experience, Dr. [Name] specializes in creating
@@ -39,13 +39,13 @@ const LandingPage = () => (
           patient care.
         </p>
       </div>
-      <Link to="/about">
+      <NavLink to="/about">
         <img
           src="https://scontent.fotp7-2.fna.fbcdn.net/v/t1.18169-9/11226_10151311438532971_1775624136_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=53a332&_nc_eui2=AeEHhUjXrDCNFHD1To8ffpasg2v1g7OpqF-Da_WDs6moX14TdbXffqdLgyu6OrJKztSnT_NDkAiKAxUd_H-ymjeh&_nc_ohc=Evm4TPjmVXcQ7kNvgGRbRvd&_nc_zt=23&_nc_ht=scontent.fotp7-2.fna&oh=00_AYDKe0ej27ySPQnTu-s2DyWDzJnHb4HbQQDUx5Jnley8pA&oe=67545A70"
           alt="Dr. [Name]"
           className="intro-image"
         />{" "}
-      </Link>
+      </NavLink>
     </section>
     <section className="services">
       <h2>Our Services</h2>

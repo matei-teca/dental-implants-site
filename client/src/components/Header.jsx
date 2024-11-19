@@ -33,7 +33,7 @@ const Header = () => (
           <NavLink to="/contact">Contact</NavLink>
         </li>
         <li>
-          <button className="cta-button">
+          <button className="header-appointment-button">
             <a
               href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Appointment+with+O.C.+Dental+Implants&details=Please+confirm+the+appointment+with+our+office.&location=O.C.+Dental+Implants+Office&sf=true"
               target="_blank"
