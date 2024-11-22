@@ -5,7 +5,7 @@ import aboutDoctorImg1 from '../assets/imgs/about-doctor-img1.jpg';
 import aboutDoctorImg2 from '../assets/imgs/about-doctor-img2.jpg';
 import aboutDoctorImg3 from '../assets/imgs/about-doctor-img3.jpg';
 import aboutDoctorImg4 from '../assets/imgs/about-doctor-img4.jpg';
-
+import bigDoctorsImage from '../assets/imgs/big-doctors-image.jpg';
 
 const AboutPage = () => (
   <div className="about-page">
@@ -51,7 +51,7 @@ const AboutPage = () => (
     <section className="about-image-section">
       <h2>Discover more about Dr. Oana</h2>
       <img
-        src="https://roger24.de/sites/default/files/userimages/doctors/oanairinacurca.jpg"
+        src={bigDoctorsImage}
         alt="Dr. [Name] Portrait"
         className="discover-image"
       />

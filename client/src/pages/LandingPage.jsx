@@ -1,8 +1,11 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import HeroCarousel from "../components/HeroCarousel";
+// import HeroCarousel from "../components/HeroCarousel";
 import "./styles/LandingPage.css";
 import TestimonialsSection from "../components/TestimonialsSection";
+import aboutDoctorImg4 from '../assets/imgs/about-doctor-img4.jpg';
+import bigDoctorsImage from '../assets/imgs/big-doctors-image.jpg';
+
 
 const LandingPage = () => (
   <div className="landing-page">
@@ -41,7 +44,7 @@ const LandingPage = () => (
       </div>
       <NavLink to="/about">
         <img
-          src="https://scontent.fotp7-2.fna.fbcdn.net/v/t1.18169-9/11226_10151311438532971_1775624136_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=53a332&_nc_eui2=AeEHhUjXrDCNFHD1To8ffpasg2v1g7OpqF-Da_WDs6moX14TdbXffqdLgyu6OrJKztSnT_NDkAiKAxUd_H-ymjeh&_nc_ohc=Evm4TPjmVXcQ7kNvgGRbRvd&_nc_zt=23&_nc_ht=scontent.fotp7-2.fna&oh=00_AYDKe0ej27ySPQnTu-s2DyWDzJnHb4HbQQDUx5Jnley8pA&oe=67545A70"
+          src={aboutDoctorImg4}
           alt="Dr. [Name]"
           className="intro-image"
         />{" "}
@@ -68,7 +71,7 @@ const LandingPage = () => (
     <section className="about-image-section">
       <h2>Discover more about Dr. Oana</h2>
       <img
-        src="https://roger24.de/sites/default/files/userimages/doctors/oanairinacurca.jpg"
+        src={bigDoctorsImage}
         alt="Dr. [Name] Portrait"
         className="discover-image"
       />

@@ -91,7 +91,7 @@
 /* cta Section */
 .cta-section {
     background: url(
-      'https://artisticsmilesdentistry.com/app/uploads/2018/08/shutterstock_773757976-1-500x334.jpg') 
+      '/src/assets/imgs/background-image-landingPage.jpg') 
       no-repeat center center/cover;
     position: relative;
     text-align: center;
