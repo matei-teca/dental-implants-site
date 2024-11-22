@@ -6,9 +6,6 @@
   padding: 20px 30px;
   background-color: #fff;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-  /* position: sticky; */
-  top: 0;
-  z-index: 1000;
   transition: box-shadow 0.3s ease;
 }
 
@@ -18,7 +15,7 @@
 
 .logo {
   width: 300px;
-  margin-right: 100px;;
+  margin-right: 100px;
 }
 
 .logo {
@@ -74,10 +71,32 @@ nav ul li a:hover {
   transform: scale(1.05); /* Adds slight zoom effect to links on hover */
 }
 
-.cta-button {
+/* Active link styles */
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.3s ease;
+  border-bottom: 2px solid transparent; /* Invisible underline */
+}
+
+nav ul li a:hover {
+  color: #008080;
+  transform: scale(1.05);
+  border-bottom: 2px solid #008080; /* Underline on hover */
+}
+
+nav ul li a.active {
+  color: #008080;
+  border-bottom: 2px solid #008080; /* Persistent underline */
+  transform: none; /* Ensures no hover scaling */
+}
+
+
+.header-appointment-button {
   padding: 10px 25px;
   background-color: #008080;
-  color: #fff;
   border: none;
   border-radius: 8px;
   font-weight: 600;
@@ -86,19 +105,33 @@ nav ul li a:hover {
   transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.cta-button:hover {
+.header-appointment-button a {
+  color: #fff;
+}
+
+.header-appointment-button:hover {
   background-color: #005f5f;
   transform: scale(1.05);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.cta-button:focus {
+.header-appointment-button:focus {
   outline: none;
   box-shadow: 0px 0px 0px 2px #005f5f;
 }
 
+nav ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+
 /* Responsive Styles */
-@media (max-width: 768px) {
+@media (max-width: 1150px) {
   .header {
     flex-direction: column;
     align-items: flex-start;
@@ -111,22 +144,23 @@ nav ul li a:hover {
 
   nav ul {
     flex-direction: column;
-    gap: 15px;
     margin-top: 15px;
+    gap: 0.5rem;
   }
 
-  .cta-button {
-    width: 100%;
+  .header-appointment-button {
+    width: 40vw;
+    margin-left: 30%;
     padding: 15px 0;
     text-align: center;
   }
   
 }
 
-nav ul {
-  display: flex;
-  gap: 40px; /* Increase the gap value */
-  list-style: none;
-  padding: 0;
-  margin: 0;
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1.25rem;
+    margin-left: -10%;
+  }
 }

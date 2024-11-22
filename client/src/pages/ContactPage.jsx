@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./styles/ContactPage.css";
-import Header from "../components/Header";
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -26,8 +25,6 @@ const ContactPage = () => {
 
   return (
     <div className="contact-page">
-      <Header />
-
       <section className="contact-header">
         <h1>Contact Us</h1>
         <p>We're here to answer any questions and help you start your journey to a healthier smile.</p>

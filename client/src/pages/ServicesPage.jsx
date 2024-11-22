@@ -1,8 +1,5 @@
 import React from "react";
 import "./styles/ServicesPage.css";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-
 
 const services = [
   {
@@ -32,8 +29,6 @@ const services = [
 ];
 
 const ServicesPage = () => (
-<>
-  <Header />
   <div className="services-page">
     <h1>Our Implantology Services</h1>
     <p>Specialized implant solutions designed for dental practices looking to provide high-quality care to their patients.</p>
@@ -47,8 +42,6 @@ const ServicesPage = () => (
       ))}
     </div>
   </div>
-  <Footer />
-</>
 );
 
 export default ServicesPage;

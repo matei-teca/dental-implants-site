@@ -1,11 +1,7 @@
 import React from "react";
 import "./styles/TestimonialsPage.css";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 
-const TestimonialsPage = () => (
-    <>
-   <Header />
+const TestimonialsPage = () => 
   <div className="testimonials-page">
     <section className="hero-section">
       <h1>What Our Patients Say</h1>
@@ -24,8 +20,6 @@ const TestimonialsPage = () => (
       </div>
     </section>
   </div>
-  <Footer />
-  </>
-);
+;
 
 export default TestimonialsPage;
