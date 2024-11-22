@@ -1,43 +1,85 @@
-// ShowCasesPage.js
-import React from "react";
-import "./styles/ShowCasesPage.css";
+import React, { useState } from 'react';
+import './styles/ShowCasesPage.css';
+import placeholder1 from '../assets/imgs/about-doctor-img1.jpg';
+import placeholder2 from '../assets/imgs/about-doctor-img2.jpg';
+import placeholder3 from '../assets/imgs/about-doctor-img3.jpg';
 
-const cases = [
+const ShowCasesPage = () => {
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const cases = [
     {
-      image: "/img/shutterstock_773757976-1-500x334.jpg",
-      title: "Case Title 1",
-      brief: "A brief explanation of Case 1...",
-      details: "Further details about Case 1.",
+      title: 'Case 1',
+      description: 'This is the first case description.',
+      images: [placeholder1, placeholder2, placeholder3, placeholder1, placeholder1],
+      details: 'Additional details about Case 1.',
       testimonial: "“Dr. [Name] did an amazing job! I feel confident and my smile looks great.” - Patient A"
     },
     {
-      image: "/img/shutterstock_773757976-1-500x334.jpg",
-      title: "Case Title 2",
-      brief: "A brief explanation of Case 2...",
-      details: "Further details about Case 2.",
-      testimonial: "“I never thought I'd be able to smile so naturally again. Thank you, Dr. [Name]!” - Patient B"
+      title: 'Case 2',
+      description: 'This is the second case description.',
+      images: [placeholder1, placeholder2, placeholder3],
+      details: 'Additional details about Case 2.',
+      testimonial: "“Dr. [Name] did an amazing job! I feel confident and my smile looks great.” - Patient B"
+    },
+    {
+      title: 'Case 3',
+      description: 'This is the third case description.',
+      images: [placeholder1, placeholder2, placeholder3, placeholder1, placeholder3],
+      details: 'Additional details about Case 3.',
+      testimonial: "“Dr. [Name] did an amazing job! I feel confident and my smile looks great.” - Patient C"
     },
     // Add more cases as needed
   ];
-  
-  const ShowCasesPage = () => {
-    return (
-      <div className="showcases-page">
-        <h1>Successful Cases Exemplified</h1>
-        <div className="case-cards">
-          {cases.map((caseItem, index) => (
-            <div key={index} className="case-card">
-              <img src={caseItem.image} alt={caseItem.title} className="case-image" />
-              <h2>{caseItem.title}</h2>
-              <p>{caseItem.brief}</p>
-              <p className="case-details">{caseItem.details}</p>
-              <blockquote className="case-testimonial">{caseItem.testimonial}</blockquote>
-            </div>
-          ))}
-        </div>
-      </div>
-    );
+
+  const handleImageClick = (image) => {
+    setSelectedImage(image);
   };
-  
-  export default ShowCasesPage;
-  
+
+  const closeLightbox = () => {
+    setSelectedImage(null);
+  };
+
+  return (
+    <div className="showcases-page">
+      <h1>Showcases</h1>
+      <div className="case-cards">
+        {cases.map((caseItem, index) => (
+          <div className="case-card" key={index}>
+            <h2>{caseItem.title}</h2>
+            <p>{caseItem.description}</p>
+            <div className="image-scroll-container">
+              {caseItem.images.map((image, imgIndex) => (
+                <img
+                  src={image}
+                  alt={`${caseItem.title} - ${imgIndex + 1}`}
+                  className="case-image"
+                  key={imgIndex}
+                  onClick={() => handleImageClick(image)}
+                />
+              ))}
+            </div>
+            <p className="case-details">{caseItem.details}</p>
+            <blockquote className="case-testimonial">
+              {caseItem.testimonial}
+            </blockquote>
+          </div>
+        ))}
+      </div>
+
+      {/* Lightbox for displaying selected image */}
+      {selectedImage && (
+        <div className="lightbox" onClick={closeLightbox}>
+          <div className="lightbox-content" onClick={(e) => e.stopPropagation()}>
+            <img src={selectedImage} alt="Selected" className="lightbox-image" />
+            <button className="lightbox-close" onClick={closeLightbox}>
+              &times;
+            </button>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default ShowCasesPage;

@@ -1,77 +1,193 @@
 .showcases-page {
-    padding: 60px 20px;
-    text-align: center;
-  }
-  
-  .showcases-page h1 {
-    font-size: 2.5rem;
-    color: #008080;
-    margin-bottom: 40px;
-  }
-  
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.showcases-page h1 {
+  font-size: 2.5rem;
+  color: #008080;
+  margin-bottom: 60px;
+}
+
+
+.case-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+  align-items: center;
+}
+
+.case-card {
+  max-width: 60%;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+  transition: 3s;
+}
+
+.case-card:hover {
+  max-width: 80%;
+  transition: 3s; /* important adjustale */
+}
+
+.case-image {
+  width: 100%;
+  max-height: 40vh; /* important adjustale */
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.case-card h2 {
+  font-size: 1.75rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.case-card p {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.case-details {
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.case-testimonial {
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #008080;
+  border-left: 4px solid #008080;
+  padding-left: 15px;
+  margin: 20px 0;
+}
+
+.case-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+/** images scrolling **/
+.image-scroll-container {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding: 10px 0;
+  scrollbar-width: thin;
+  scrollbar-color: #008080 transparent;
+  scroll-snap-type: x mandatory;
+  justify-content: flex-start;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.image-scroll-container img {
+  display: inline-block;
+  flex: 0 0 auto;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* fix for iOS bounce scroll issue */
+.image-scroll-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.image-scroll-container::-webkit-scrollbar-thumb {
+  background: #008080;
+  border-radius: 10px;
+}
+
+.image-scroll-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Prevent shrinking and allow horizontal scrolling */
+.case-image {
+  flex: 0 0 auto;
+  max-width: 200px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+
+/* Lightbox */
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Lightbox content */
+.lightbox-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Lightbox image with original ratios */
+.lightbox-image {
+  max-width: 60%;
+  max-height: 80vh;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+  object-fit: contain;
+  z-index: 3;
+  background-color: #050505;
+}
+
+/* Close button */
+.lightbox-close {
+  position: absolute;
+  margin: 0px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  height: 100vh;
+  width: 100vw;
+  z-index: 2;
+  background-color: none;
+  transition: 1s;
+}
+
+.lightbox-close:hover {
+  background-color: white;
+  transition: 1s;
+}
+
+
+@media (max-width: 768px) {
+
   .case-cards {
-    display: flex;
     flex-direction: column;
-    gap: 40px;
-    align-items: center;
   }
-  
+
   .case-card {
-    max-width: 900px;
-    padding: 20px;
-    background: #fff;
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: left;
+    max-width: 70vw;
   }
-  
-  .case-image {
-    width: 100%;
-    border-radius: 8px;
-    margin-bottom: 20px;
-  }
-  
-  .case-card h2 {
-    font-size: 1.75rem;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .case-card p {
-    color: #666;
-    font-size: 1rem;
-    margin-bottom: 20px;
-  }
-  
-  .case-details {
-    font-style: italic;
-    margin-bottom: 20px;
-  }
-  
-  .case-testimonial {
-    font-style: italic;
-    font-size: 1.1rem;
-    color: #008080;
-    border-left: 4px solid #008080;
-    padding-left: 15px;
-    margin: 20px 0;
-  }
-  
+
   .case-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    max-width: 97vw;
   }
-  
-
-
-  @media (max-width: 768px) {
-    .case-cards {
-      flex-direction: column;
-      gap: 1rem;
-    }
-  }
-
-  
-
-  
+}
