@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './styles/ShowCasesPage.css';
-import placeholder1 from '../assets/imgs/about-doctor-img1.jpg';
-import placeholder2 from '../assets/imgs/about-doctor-img2.jpg';
-import placeholder3 from '../assets/imgs/about-doctor-img3.jpg';
+import placeholder1 from '../assets/imgs/big-doctors-image.jpg';
+// import placeholder2 from '../assets/imgs/about-doctor-img2.jpg';
+// import placeholder3 from '../assets/imgs/about-doctor-img3.jpg';
 
 const ShowCasesPage = () => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -11,21 +11,21 @@ const ShowCasesPage = () => {
     {
       title: 'Case 1',
       description: 'This is the first case description.',
-      images: [placeholder1, placeholder2, placeholder3, placeholder1, placeholder1],
+      images: [placeholder1, placeholder1, placeholder1, placeholder1, placeholder1],
       details: 'Additional details about Case 1.',
       testimonial: "“Dr. [Name] did an amazing job! I feel confident and my smile looks great.” - Patient A"
     },
     {
       title: 'Case 2',
       description: 'This is the second case description.',
-      images: [placeholder1, placeholder2, placeholder3],
+      images: [placeholder1, placeholder1, placeholder1],
       details: 'Additional details about Case 2.',
       testimonial: "“Dr. [Name] did an amazing job! I feel confident and my smile looks great.” - Patient B"
     },
     {
       title: 'Case 3',
       description: 'This is the third case description.',
-      images: [placeholder1, placeholder2, placeholder3, placeholder1, placeholder3],
+      images: [placeholder1, placeholder1, placeholder1, placeholder1, placeholder1],
       details: 'Additional details about Case 3.',
       testimonial: "“Dr. [Name] did an amazing job! I feel confident and my smile looks great.” - Patient C"
     },
