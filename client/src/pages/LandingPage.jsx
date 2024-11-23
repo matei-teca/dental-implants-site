@@ -1,11 +1,43 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 // import HeroCarousel from "../components/HeroCarousel";
 import "./styles/LandingPage.css";
 import TestimonialsSection from "../components/TestimonialsSection";
 import aboutDoctorImg4 from '../assets/imgs/about-doctor-img4.jpg';
 import bigDoctorsImage from '../assets/imgs/big-doctors-image.jpg';
 
+const services = [
+  {
+    id: "single-tooth-implants",
+    title: "Single Tooth Implants",
+    description: "Reliable solutions for replacing individual missing teeth with natural results.",
+  },
+  {
+    id: "multiple-teeth-implants",
+    title: "Multiple Teeth Implants",
+    description: "Solutions for restoring multiple missing teeth with a seamless, long-lasting finish.",
+  },
+  {
+    id: "full-arch-restoration",
+    title: "Full Arch Restoration",
+    description: "Complete arch replacements to restore full functionality and aesthetics.",
+  },
+  // {
+  //   id: "bone-grafting",
+  //   title: "Bone Grafting",
+  //   description: "Pre-surgical procedures to ensure a solid foundation for implant placement.",
+  // },
+  // {
+  //   id: "sinus-lifts",
+  //   title: "Sinus Lifts",
+  //   description: "Advanced procedures to enhance upper jaw bone structure for secure implants.",
+  // },
+  // {
+  //   id: "immediate-load-implants",
+  //   title: "Immediate Load Implants",
+  //   description: "Allowing patients to receive temporary crowns on the same day as implant placement.",
+  // },
+];
 
 const LandingPage = () => (
   <div className="landing-page">
@@ -50,21 +82,21 @@ const LandingPage = () => (
         />{" "}
       </NavLink>
     </section>
+
     <section className="services">
       <h2>Our Services</h2>
       <div className="service-cards">
-        <div className="card">
-          <h3>Single Tooth Implants</h3>
-          <p>Efficient and lasting solution for missing teeth.</p>
-        </div>
-        <div className="card">
-          <h3>Multiple Teeth Implants</h3>
-          <p>For a seamless, natural-looking smile.</p>
-        </div>
-        <div className="card">
-          <h3>Multiple Teeth Implants</h3>
-          <p>For a seamless, natural-looking smile.</p>
-        </div>
+        {services.map((service) => (
+          <Link
+            key={service.id}
+            to={`/services/${service.id}`}
+            state={service}
+            className="card"
+          >
+            <h3>{service.title}</h3>
+            <p>{service.description}</p>
+          </Link>
+        ))}
       </div>
     </section>
 

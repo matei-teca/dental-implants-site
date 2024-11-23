@@ -219,10 +219,14 @@
   .card h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
+    text-decoration: none;
+    color: #008080;
   }
   
   .card p {
     font-size: 1rem;
+    text-decoration: none;
+    color: #333;
   }
   
 
