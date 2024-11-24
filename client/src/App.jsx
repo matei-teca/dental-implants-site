@@ -7,6 +7,7 @@ import ServicePage from './pages/secondary/ServicePage';
 import TestimonialsPage from './pages/TestimonialsPage';
 import Contact from './pages/ContactPage';
 import ShowCasesPage from './pages/ShowCasesPage';
+import Testing from './pages/Testing';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
@@ -23,6 +24,7 @@ function App() {
           <Route path="/testimonials" element={<TestimonialsPage />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/showcases" element={<ShowCasesPage />} />
+          <Route path="/testing" element={<Testing />} />
         </Routes>
         <Footer />
       </div>

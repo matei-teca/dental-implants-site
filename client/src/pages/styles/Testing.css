@@ -1,0 +1,11 @@
+.testing-page {
+    min-height: 100vh;
+}
+
+.testing-section1, .testing-section2 {
+    min-height: 50vh;
+    margin-block: 5vh;
+    background-color: black;
+    color: white;;
+
+}
