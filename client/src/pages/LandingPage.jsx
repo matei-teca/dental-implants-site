@@ -97,7 +97,9 @@ const LandingPage = () => {
       </section>
 
       <section className="services">
-        <h2>Our Services</h2>
+        <NavLink to="/services">
+           <h2>Our Services</h2>
+        </NavLink>
         <div className="service-cards">
           {services.map((service) => (
             <Link
@@ -114,7 +116,9 @@ const LandingPage = () => {
       </section>
 
       <section className="about-image-section">
-        <h2>Discover more about Dr. Oana</h2>
+        <NavLink to="/about">
+           <h2>Discover more about Dr. Oana</h2>
+        </NavLink>
         <img
           src={bigDoctorsImage}
           alt="Dr. [Name] Portrait"
