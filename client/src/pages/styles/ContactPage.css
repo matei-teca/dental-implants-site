@@ -53,6 +53,7 @@
   transform: translateY(-5px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   background-color: rgba(0, 0, 0, 0.9);
+  transition: 1.5s;
 }
 
 .contact-info:hover a {

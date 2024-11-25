@@ -36,10 +36,8 @@
     line-height: 1.5;
   }
   
-  .about-qualifications,
-  .about-philosophy,
-  .about-testimonials {
-    margin-bottom: 40px;
+  .about-page section {
+    margin-bottom: 5rem;
   }
   
   h2 {
