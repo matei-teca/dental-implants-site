@@ -58,7 +58,7 @@ const LandingPage = () => {
     <div className="landing-page">
       <section className="hero">
         <h1>
-          Restore your Smiles with Precision Dental Implants. Let's make your
+          Restoring Smiles with Precision Dental Implants. Let's make your
           patients' smiles.
         </h1>
         <p>Your solution to a precision dental implant begins here.</p>

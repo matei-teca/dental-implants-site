@@ -22,12 +22,10 @@
   }
   
   .hero h1 {
-    font-size: 3rem;
     margin-bottom: 20px;
   }
   
   .hero p {
-    font-size: 1.2rem;
     margin-bottom: 20px;
   }
   
@@ -120,13 +118,11 @@
   }
   
   .cta-content h2 {
-    font-size: 2.5rem;
     margin-bottom: 20px;
     color: #fff !important;
   }
   
   .cta-content p {
-    font-size: 1.2rem;
     margin-bottom: 20px;
   }
   
@@ -169,12 +165,7 @@
   }
   
   .intro h2 {
-    font-size: 2rem;
     margin-bottom: 10px;
-  }
-  
-  .intro p {
-    font-size: 1.1rem;
   }
   
   .intro-image {
@@ -191,7 +182,6 @@
   }
   
   .services h2 {
-    font-size: 2rem;
     margin-bottom: 30px;
     color:#008080;
   }
@@ -225,11 +215,31 @@
   }
   
   .card p {
-    font-size: 1rem;
     text-decoration: none;
     color: #333;
   }
   
+
+
+  /* font sizes for all sections */
+
+  .landing-page h1 {
+    font-size: 3rem;
+  }
+
+  .landing-page section h2 {
+    font-size: 2rem;
+  }
+
+  .landing-page p {
+    font-size: 1.2rem;
+  }
+
+  .card p {
+    font-size: 1rem;
+
+  }
+
 
   @media (max-width: 1300px) {
     .landing-page .services {
@@ -328,3 +338,52 @@
     }
   }
 
+
+
+  /* responsive font size */
+
+  @media (max-width: 768px) {
+
+    .hero h1 {
+      font-size: 2.25rem;
+    }
+
+    .hero p, .cta-content p, .intro p {
+      font-size: 1.1rem;
+    }
+
+    .cta-content h2, .intro h2, .services h2, .about-image-section h2 {
+      font-size: 1.75rem;
+    }
+
+    .card h3 {
+      font-size: 1.25rem;
+    }
+
+    .card p, .cta-button {
+      font-size: 1rem;
+    }
+
+  }
+
+  @media (max-width: 480px) {
+    .hero h1 {
+      font-size: 2.15rem;
+    }
+
+    .hero p, .cta-content p, .intro p {
+      font-size: 1rem;
+    }
+
+    .cta-content h2, .intro h2, .services h2, .about-image-section h2 {
+      font-size: 1.55rem;
+    }
+
+    .card h3 {
+      font-size: 1.25rem;
+    }
+
+    .card p, .cta-button {
+      font-size: 1rem;
+    }
+  }
