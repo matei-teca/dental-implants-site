@@ -32,8 +32,20 @@
   align-items: center;
   color: #333;
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  border-bottom: 2px solid transparent; /* Default: no underline */
   width: 300px;
+
+}
+
+.logo a:hover {
+  color: #008080;
+  border-bottom: 2px solid #008080; /* Underline on hover */
+}
+
+.logo a.active {
+  color: #008080;
+  border-bottom: 2px solid #008080; /* Persistent underline when active */
 }
 
 .logo img {

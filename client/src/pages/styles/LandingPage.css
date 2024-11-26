@@ -232,9 +232,22 @@
     width: 80vw;
   }
 
+  .about-image-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   .about-image-section img {
     padding: 0.25rem;
+    margin-top: 1rem;
   }
+
+  .about-image-section h2, .about-image-section a, .about-image-section img {
+    max-width: 80vw;
+  }
+
 }
 
 @media (max-width: 768px) {
