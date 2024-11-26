@@ -22,21 +22,6 @@ const services = [
     title: "Full Arch Restoration",
     description: "Complete arch replacements to restore full functionality and aesthetics.",
   },
-  // {
-  //   id: "bone-grafting",
-  //   title: "Bone Grafting",
-  //   description: "Pre-surgical procedures to ensure a solid foundation for implant placement.",
-  // },
-  // {
-  //   id: "sinus-lifts",
-  //   title: "Sinus Lifts",
-  //   description: "Advanced procedures to enhance upper jaw bone structure for secure implants.",
-  // },
-  // {
-  //   id: "immediate-load-implants",
-  //   title: "Immediate Load Implants",
-  //   description: "Allowing patients to receive temporary crowns on the same day as implant placement.",
-  // },
 ];
 
 const LandingPage = () => {
@@ -61,7 +46,7 @@ const LandingPage = () => {
           Restoring Smiles with Precision Dental Implants. Let's make your
           patients' smiles.
         </h1>
-        <p>Your solution to a precision dental implant begins here.</p>
+        <p>Your solution to precision dental implants begins here.</p>
         <NavLink to="/services">
           <button className="hero-button">Get Started</button>
         </NavLink>
@@ -127,11 +112,9 @@ const LandingPage = () => {
       </section>
       {/* <HeroCarousel /> */}
 
-      <br />
-      <br />
+      <div style = {{marginBlock: "3rem"}}>
       <TestimonialsSection />
-      <br />
-      <br />
+      </div>
 
     </div>
   );
