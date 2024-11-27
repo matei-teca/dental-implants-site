@@ -1,5 +1,6 @@
 import React from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { useLanguage } from './LanguageContext';
 import LandingPage from './pages/LandingPage';
 import AboutPage from './pages/AboutPage';
 import ServicesPage from './pages/ServicesPage';
@@ -12,10 +13,16 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 
 function App() {
+  const { language, toggleLanguage } = useLanguage();
+
   return (
     <Router>
       <div>
         <Header />
+        <button onClick={toggleLanguage} className='toggle-language-bttn'>
+          {language === 'en' ? 'Switch to Deutsch' : 'Wechseln Sie zu Englisch'}
+        </button>
+
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/about" element={<AboutPage />} />

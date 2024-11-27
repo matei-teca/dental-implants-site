@@ -129,3 +129,8 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+
+.toggle-language-bttn{
+  max-width: 20vw;
+}

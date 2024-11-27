@@ -1,10 +1,23 @@
 import React from "react";
 import { NavLink, Link, useNavigate } from "react-router-dom";
+import { useLanguage } from '../LanguageContext';
+
 // import HeroCarousel from "../components/HeroCarousel";
 import "./styles/LandingPage.css";
 import TestimonialsSection from "../components/TestimonialsSection";
 import aboutDoctorImg4 from '../assets/imgs/about-doctor-img4.jpg';
 import bigDoctorsImage from '../assets/imgs/big-doctors-image.jpg';
+
+const texts = {
+  en: [{
+    title: "Restoring Smiles with Precision Dental Implants. Let's make your patients' smiles.",
+    description: 'Your solution to precision dental implants begins here.',
+  }],
+  de: [{
+    title: 'Willkommen auf unserer Website!',
+    description: 'Entdecken Sie unsere Dienstleistungen und Angebote.',
+  }],
+};
 
 const services = [
   {
@@ -26,6 +39,8 @@ const services = [
 
 const LandingPage = () => {
 
+  const { language } = useLanguage();
+
   const navigate = useNavigate();
 
   const scrollToAboutHero = () => {
@@ -43,10 +58,9 @@ const LandingPage = () => {
     <div className="landing-page">
       <section className="hero">
         <h1>
-          Restoring Smiles with Precision Dental Implants. Let's make your
-          patients' smiles.
+        {texts[language][0].title}
         </h1>
-        <p>Your solution to precision dental implants begins here.</p>
+        <p>{texts[language][0].description}</p>
         <NavLink to="/services">
           <button className="hero-button">Get Started</button>
         </NavLink>
