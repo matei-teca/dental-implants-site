@@ -130,7 +130,30 @@ html {
   scroll-behavior: smooth;
 }
 
+.toggle-language-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  gap: 0.35rem;
+  /* background-color: red; */
+}
 
-.toggle-language-bttn{
-  max-width: 20vw;
+.toggle-language-bttn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 1px solid black;
+  font-size: 0.9rem;
+  background-image: url("https://languageicon.org/language-icon.png");
+  background-size: cover; 
+  background-position: center;
+
 }

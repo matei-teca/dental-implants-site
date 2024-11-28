@@ -19,9 +19,11 @@ function App() {
     <Router>
       <div>
         <Header />
+        <div className='toggle-language-container'>
         <button onClick={toggleLanguage} className='toggle-language-bttn'>
-          {language === 'en' ? 'Switch to Deutsch' : 'Wechseln Sie zu Englisch'}
         </button>
+        {language === 'en' ? 'EN > DE' : 'DE > EN'}
+        </div>
 
         <Routes>
           <Route path="/" element={<LandingPage />} />
