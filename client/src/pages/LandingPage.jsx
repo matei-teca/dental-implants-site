@@ -15,25 +15,48 @@ const texts = {
     button: "Get Started"
   }, {
     title: "Looking to Provide Implant Solutions for Your Patients?",
-    description: "Partner with Dr. [Name] to ensure your patients receive expert care in dental implantology. Our service specializes in high-quality implant treatments.",
+    description: "Partner with Dr. Oana Curca to ensure your patients receive expert care in dental implantology. Our service specializes in high-quality implant treatments.",
     button: "Refer a Patient"
   }, {
     title: "Meet Dr. Oana Curca",
-    description: "With over X years of experience, Dr. [Name] specializes in creating tailored solutions for dental health, focusing on implantology and patient care.",
-  }],
+    description: "With over X years of experience, Dr. Oana specializes in creating tailored solutions for dental health, focusing on implantology and patient care.",
+  }, {
+    title1: "Our Services",
+    title2: [],
+    descriptions: [],
+  }, {
+    title: "Discover more about Dr. Oana",
+  },
+  {
+    title: "What Our Patients Say",
+    description: "Discover the experiences of our satisfied patients.",
+  },
+],
 
   de: [{
     title: "Wiederherstellung des Lächelns mit Präzisionszahnimplantaten. Lassen Sie uns das Lächeln Ihrer Patienten zaubern.",
     description: "Hier beginnt Ihre Lösung für Präzisionszahnimplantate.",
     button: "Erste Schritte"
   }, {
-    title: "Willkommen auf unserer Website!",
-    description: "Entdecken Sie unsere Dienstleistungen und Angebote.",
-    button: "Getten Starten :))"
+    title: "Möchten Sie Ihren Patienten Implantatlösungen anbieten?",
+    description: "Arbeiten Sie mit Dr. Oana Curca zusammen, um sicherzustellen, dass Ihre Patienten eine fachkundige Betreuung in der Zahnimplantologie erhalten. Unser Service ist auf hochwertige Implantatbehandlungen spezialisiert.",
+    button: "Einen Patienten überweisen"
   }, {
-    title: "Willkommen auf unserer Website!",
-    description: "Entdecken Sie unsere Dienstleistungen und Angebote.",
-  }],
+    title: "Treffen Sie Dr. Oana Curca",
+    description: "Mit über X Jahren Erfahrung ist Dr. Oana auf die Entwicklung maßgeschneiderter Lösungen für die Zahngesundheit spezialisiert, wobei der Schwerpunkt auf Implantologie und Patientenversorgung liegt.",
+  }, {
+    title1: "Unsere Leistungen",
+    title2: [],
+    descriptions: [],
+  },
+  {
+    title: "Erfahren Sie mehr über Dr. Oana",
+  },
+  {
+    title: "Wiederherstellung des Lächelns mit Präzisionszahnimplantaten. Lassen Sie uns das Lächeln Ihrer Patienten zaubern.",
+    description: "Hier beginnt Ihre Lösung für Präzisionszahnimplantate.",
+  },
+],
 };
 
 
@@ -116,7 +139,7 @@ const LandingPage = () => {
 
       <section className="services">
         <NavLink to="/services">
-          <h2>Our Services</h2>
+          <h2>{texts[language][3].title1}</h2>
         </NavLink>
         <div className="service-cards">
           {services.map((service) => (
@@ -135,7 +158,7 @@ const LandingPage = () => {
 
       <section className="about-image-section">
         <NavLink to="/about">
-          <h2>Discover more about Dr. Oana</h2>
+          <h2>{texts[language][4].title}</h2>
         </NavLink>
         <img
           src={bigDoctorsImage}
