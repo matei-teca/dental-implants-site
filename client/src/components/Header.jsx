@@ -1,8 +1,17 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { useLanguage } from '../LanguageContext';
 import "./styles/Header.css";
 
-const Header = () => (
+const texts = {
+  en: ["About", "Services", "Testimonials", "Showcases", "Contact", "Book an Appointment"],
+  de: ["Über uns", "Leistungen", "Erfahrungsberichte", "Vitrinen", "Kontakt", "Termin vereinbaren"]
+}
+
+const Header = () => {
+  const { language } = useLanguage();
+
+  return (
   <header className="header">
     <div className="logo">
       <NavLink to="/">
@@ -18,19 +27,19 @@ const Header = () => (
     <nav>
       <ul>
         <li>
-          <NavLink to="/about">About</NavLink>
+          <NavLink to="/about">{texts[language][0]}</NavLink>
         </li>
         <li>
-          <NavLink to="/services">Services</NavLink>
+          <NavLink to="/services">{texts[language][1]}</NavLink>
         </li>
         <li>
-          <NavLink to="/testimonials">Testimonials</NavLink>
+          <NavLink to="/testimonials">{texts[language][2]}</NavLink>
         </li>
         <li>
-          <NavLink to="/showcases">ShowCases</NavLink>
+          <NavLink to="/showcases">{texts[language][3]}</NavLink>
         </li>
         <li>
-          <NavLink to="/contact">Contact</NavLink>
+          <NavLink to="/contact">{texts[language][4]}</NavLink>
         </li>
         <li>
           <button className="header-appointment-button">
@@ -39,7 +48,7 @@ const Header = () => (
               target="_blank"
               rel="noopener noreferrer"
             >
-              Book an Appointment
+              {texts[language][5]}
             </a>
           </button>
         </li>
@@ -47,5 +56,6 @@ const Header = () => (
     </nav>
   </header>
 );
+}
 
 export default Header;

@@ -23,9 +23,9 @@ const texts = {
   }],
 
   de: [{
-    title: "Willkommen auf unserer Website!",
-    description: "Entdecken Sie unsere Dienstleistungen und Angebote.",
-    button: "Getten Starten :))"
+    title: "Wiederherstellung des Lächelns mit Präzisionszahnimplantaten. Lassen Sie uns das Lächeln Ihrer Patienten zaubern.",
+    description: "Hier beginnt Ihre Lösung für Präzisionszahnimplantate.",
+    button: "Erste Schritte"
   }, {
     title: "Willkommen auf unserer Website!",
     description: "Entdecken Sie unsere Dienstleistungen und Angebote.",
@@ -58,7 +58,6 @@ const services = [
 const LandingPage = () => {
 
   const { language } = useLanguage();
-
   const navigate = useNavigate();
 
   const scrollToAboutHero = () => {
