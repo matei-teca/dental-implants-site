@@ -1,8 +1,17 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { useLanguage } from '../LanguageContext';
 import "./styles/Footer.css";
 
-const Footer = () => (
+const texts = {
+  en: ["About", "Services", "Testimonials", "Showcases", "Contact", "Book an Appointment"],
+  de: ["Überuns", "Leistungen", "Erfahrungsberichte", "Vitrinen", "Kontakt", "Termin vereinbaren"]
+}
+
+const Footer = () => {
+  const { language } = useLanguage();
+  
+  return (
   <footer className="footer">
     <div className="footer-nav">
       <ul>
@@ -15,16 +24,17 @@ const Footer = () => (
             />
           </NavLink>
         </li>
-        <li><NavLink to="/about">About</NavLink></li>
-        <li><NavLink to="/services">Services</NavLink></li>
-        <li><NavLink to="/testimonials">Testimonials</NavLink></li>
-        <li><NavLink to="/showcases">ShowCases</NavLink></li>
-        <li><NavLink to="/contact">Contact</NavLink></li>
+        <li><NavLink to="/about">{texts[language][0]}</NavLink></li>
+        <li><NavLink to="/services">{texts[language][1]}</NavLink></li>
+        <li><NavLink to="/testimonials">{texts[language][2]}</NavLink></li>
+        <li><NavLink to="/showcases">{texts[language][3]}</NavLink></li>
+        <li><NavLink to="/contact">{texts[language][4]}</NavLink></li>
       </ul>
     </div>
     <p>&copy; {new Date().getFullYear()} O.C. Dental Implants</p>
     <p>Contact us at: oana.teca@gmail.com</p>
   </footer>
 );
+}
 
 export default Footer;
