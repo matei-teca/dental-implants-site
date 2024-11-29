@@ -34,7 +34,7 @@ const texts = {
 ],
 
   de: [{
-    title: "Wiederherstellung des Lächelns mit Präzisionszahnimplantaten. Lassen Sie uns das Lächeln Ihrer Patienten zaubern.",
+    title: "Wiederherstellung des Lächelns mit Präzisionszahn-implantaten. Lassen Sie uns das Lächeln Ihrer Patienten zaubern.",
     description: "Hier beginnt Ihre Lösung für Präzisionszahnimplantate.",
     button: "Erste Schritte"
   }, {
@@ -53,7 +53,7 @@ const texts = {
     title: "Erfahren Sie mehr über Dr. Oana",
   },
   {
-    title: "Wiederherstellung des Lächelns mit Präzisionszahnimplantaten. Lassen Sie uns das Lächeln Ihrer Patienten zaubern.",
+    title: "Wiederherstellung des Lächelns mit Präzisionszahn-implantaten. Lassen Sie uns das Lächeln Ihrer Patienten zaubern.",
     description: "Hier beginnt Ihre Lösung für Präzisionszahnimplantate.",
   },
 ],
