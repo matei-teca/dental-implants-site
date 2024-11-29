@@ -1,84 +1,126 @@
 // AboutPage.jsx
 import React from "react";
 import "./styles/AboutPage.css";
+import { useLanguage } from '../LanguageContext';
+
 import aboutDoctorImg1 from '../assets/imgs/about-doctor-img1.jpg';
 import aboutDoctorImg2 from '../assets/imgs/about-doctor-img2.jpg';
 import aboutDoctorImg3 from '../assets/imgs/about-doctor-img3.jpg';
 import aboutDoctorImg4 from '../assets/imgs/about-doctor-img4.jpg';
 import bigDoctorsImage from '../assets/imgs/big-doctors-image.jpg';
 
-const AboutPage = () => (
-  <div className="about-page">
-    <section className="about-hero">
-      <img
-        src={aboutDoctorImg4}
-        alt="Dr. [Name]"
-        className="about-image"
-      />
-      <div className="about-text">
-        <h1>Meet Dr. Oana Curca </h1>
-        <p>
-          Dr. [Name] has dedicated over [X years] to advancing dental health
-          through implantology and patient-centered care. With specialized
-          training in dental implants, she has helped countless patients regain
-          their smiles and confidence.
-        </p>
-      </div>
-    </section>
+const texts = {
+  en: [
+    {
+      title: "Meet Dr. Oana Curca",
+      description: "Dr. [Name] has dedicated over [X years] to advancing dental health through implantology and patient-centered care. With specialized training in dental implants, she has helped countless patients regain their smiles and confidence."
+    }, {
+      title: "Qualifications & Expertise",
+      description: ["DDS, [University, Graduation Year]",
+        "Certification in Dental Implantology from [Certification Institution]",
+        "Member of [Professional Organizations]",
+        "Over [X] successful implant procedures performed"]
+    }, {
+      title: "Patient Care Philosophy",
+      description: "Dr. [Name] believes that each patient’s journey is unique and prioritizes comfort, precision, and understanding in her approach. Her goal is to ensure that every patient not only receives high-quality care but also feels informed and at ease throughout the process."
+    }, {
+    title: "Discover more about Dr. Oana",
+  }, {
+    title: "Gallery",
+  },
+  ],
+de: [
+  {
+    title: "Treffen Sie Dr. Oana Curca",
+    description: "Dr. [Name] widmet sich über [X Jahre] der Förderung der Zahngesundheit durch Implantologie und patientenzentrierte Pflege. Mit einer Spezialausbildung für Zahnimplantate hat sie unzähligen Patienten geholfen, ihr Lächeln und ihr Selbstvertrauen wiederzugewinnen."
+  }, {
+    title: "Qualifikationen und Fachwissen",
+    description: ["DDS, [Universität, Abschlussjahr]",
+      "Zertifizierung in Zahnimplantologie von [Zertifizierungsinstitution]",
+      "Mitglied von [Berufsverbänden]",
+      "Über [X] erfolgreiche Implantationsverfahren durchgeführt"]
+  }, {
+    title: "Philosophie der Patientenversorgung",
+    description: "Dr. [Name] ist davon überzeugt, dass der Weg jedes Patienten einzigartig ist und legt bei ihrem Ansatz Wert auf Komfort, Präzision und Verständnis. Ihr Ziel ist es sicherzustellen, dass jeder Patient nicht nur eine qualitativ hochwertige Versorgung erhält, sondern sich während des gesamten Prozesses auch gut informiert und wohl fühlt."
+  }, {
+    title: "Erfahren Sie mehr über Dr. Oana",
+  }, {
+    title: "Galerie",
+  },
+]
+}
 
-    <section className="about-qualifications">
-      <h2>Qualifications & Expertise</h2>
-      <ul>
-        <li>DDS, [University, Graduation Year]</li>
-        <li>
-          Certification in Dental Implantology from [Certification Institution]
-        </li>
-        <li>Member of [Professional Organizations]</li>
-        <li>Over [X] successful implant procedures performed</li>
-      </ul>
-    </section>
+const AboutPage = () => {
+  const { language } = useLanguage();
 
-    <section className="about-philosophy">
-      <h2>Patient Care Philosophy</h2>
-      <p>
-        Dr. [Name] believes that each patient’s journey is unique and
-        prioritizes comfort, precision, and understanding in her approach. Her
-        goal is to ensure that every patient not only receives high-quality care
-        but also feels informed and at ease throughout the process.
-      </p>
-    </section>
-
-    <section className="about-image-section">
-      <h2>Discover more about Dr. Oana</h2>
-      <img
-        src={bigDoctorsImage}
-        alt="Dr. [Name] Portrait"
-        className="discover-image"
-      />
-    </section>
-
-    <section className="gallery-section">
-      <h2>Gallery</h2>
-      <div className="image-gallery">
-        <img
-          src={aboutDoctorImg1}
-          alt="Dr. [Name] 1"
-        />
-        <img
-          src={aboutDoctorImg2}
-          alt="Dr. [Name] 2"
-        />
-        <img
-          src={aboutDoctorImg3}
-          alt="Dr. [Name] 3"
-        />
+  return (
+    <div className="about-page">
+      <section className="about-hero">
         <img
           src={aboutDoctorImg4}
-          alt="Dr. [Name] 4"
+          alt="Dr. [Name]"
+          className="about-image"
         />
-      </div>
-    </section>
-  </div>
-);
+        <div className="about-text">
+          <h1>{texts[language][0].title}</h1>
+          <p>
+            {texts[language][0].description}
+          </p>
+        </div>
+      </section>
+
+      <section className="about-qualifications">
+        <h2>{texts[language][1].title}</h2>
+        <ul>
+          <li>{texts[language][1].description[0]}</li>
+          <li>
+            {texts[language][1].description[1]}
+          </li>
+          <li>{texts[language][1].description[2]}</li>
+          <li>{texts[language][1].description[3]}</li>
+        </ul>
+      </section>
+
+      <section className="about-philosophy">
+        <h2>{texts[language][2].title}</h2>
+        <p>
+        {texts[language][2].description}
+        </p>
+      </section>
+
+      <section className="about-image-section">
+        <h2>{texts[language][3].title}</h2>
+        <img
+          src={bigDoctorsImage}
+          alt="Dr. [Name] Portrait"
+          className="discover-image"
+        />
+      </section>
+
+      <section className="gallery-section">
+        <h2>{texts[language][4].title}</h2>
+        <div className="image-gallery">
+          <img
+            src={aboutDoctorImg1}
+            alt="Dr. [Name] 1"
+          />
+          <img
+            src={aboutDoctorImg2}
+            alt="Dr. [Name] 2"
+          />
+          <img
+            src={aboutDoctorImg3}
+            alt="Dr. [Name] 3"
+          />
+          <img
+            src={aboutDoctorImg4}
+            alt="Dr. [Name] 4"
+          />
+        </div>
+      </section>
+    </div>
+  );
+
+}
 
 export default AboutPage;
