@@ -1,7 +1,39 @@
 import React, { useState } from "react";
+import { useLanguage } from '../LanguageContext';
 import "./styles/ContactPage.css";
 
+const texts = {
+  en: [
+    {
+      title: "Contact Us",
+      description: "We're here to answer any questions and help you start your journey to a healthier smile."
+    }, {
+      title: "Get in Touch with Dr. Oana Curca Directly",
+      description: ["Phone:", "Email:"]
+    }, {
+      title: "Or complete the form for an collaboration appointment",
+      description: ["Name", "Email", "Message", "Send Message"],
+      descriptionPlaceholder: ["Your Full Name", "Your Email Address", "Your Message"]
+    }
+  ],
+
+  de: [
+    {
+      title: "Kontaktieren Sie uns",
+      description: "Wir sind hier, um Ihre Fragen zu beantworten und Ihnen zu helfen, Ihre Reise zu einem gesünderen Lächeln zu beginnen."
+    }, {
+      title: "Kontaktieren Sie Dr. Oana Curca direkt",
+      description: ["Telefon:", "E-Mail:"]
+    }, {
+      title: "Oder füllen Sie das Formular für einen Kollaborationstermin aus",
+      description: ["Name", "E-Mail", "Nachricht", "Nachricht senden"],
+      descriptionPlaceholder: ["Ihr vollständiger Name", "Ihre E-Mail-Adresse", "Ihre Nachricht"]
+    }
+  ]
+}
+
 const ContactPage = () => {
+  const { language } = useLanguage();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -26,53 +58,53 @@ const ContactPage = () => {
   return (
     <div className="contact-page">
       <section className="contact-header">
-        <h1>Contact Us</h1>
-        <p>We're here to answer any questions and help you start your journey to a healthier smile.</p>
+        <h1>{texts[language][0].title}</h1>
+        <p>{texts[language][0].description}</p>
       </section>
 
       <section className="contact-info">
-        <h2>Get in Touch with Dr. Oana Curca Directly</h2>
-        <p><strong>Phone:</strong> <a href="tel:+5555555555">(555) 555-5555</a></p>
-        <p><strong>Email:</strong> <a href="mailto:oana.curca@example.com">oana.curca@example.com</a></p>
+        <h2>{texts[language][1].title}</h2>
+        <p><strong>{texts[language][1].description[0]}</strong> <a href="tel:+5555555555">(555) 555-5555</a></p>
+        <p><strong>{texts[language][1].description[1]}</strong> <a href="mailto:oana.curca@example.com">oana.curca@example.com</a></p>
       </section>
 
       <section className="contact-form-section">
-        <h2>Or complete the form for an collaboration appointment</h2>
+        <h2>{texts[language][2].title}</h2>
         <form className="contact-form" onSubmit={handleSubmit}>
-          <label htmlFor="name">Name</label>
+          <label htmlFor="name">{texts[language][2].description[0]}</label>
           <input
             type="text"
             id="name"
             name="name"
-            placeholder="Your Full Name"
+            placeholder= {texts[language][2].descriptionPlaceholder[0]}
             value={formData.name}
             onChange={handleChange}
             required
           />
 
-          <label htmlFor="email">Email</label>
+          <label htmlFor="email">{texts[language][2].description[1]}</label>
           <input
             type="email"
             id="email"
             name="email"
-            placeholder="Your Email Address"
+            placeholder= {texts[language][2].descriptionPlaceholder[1]}
             value={formData.email}
             onChange={handleChange}
             required
           />
 
-          <label htmlFor="message">Message</label>
+          <label htmlFor="message">{texts[language][2].description[2]}</label>
           <textarea
             id="message"
             name="message"
-            placeholder="Your Message"
+            placeholder= {texts[language][2].descriptionPlaceholder[2]}
             rows="5"
             value={formData.message}
             onChange={handleChange}
             required
           ></textarea>
 
-          <button type="submit" className="contact-submit-button">Send Message</button>
+          <button type="submit" className="contact-submit-button">{texts[language][2].description[3]}</button>
         </form>
       </section>
     </div>

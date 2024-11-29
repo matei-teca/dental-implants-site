@@ -1,13 +1,21 @@
 import React, { useState } from 'react';
+import { useLanguage } from '../LanguageContext';
 import './styles/ShowCasesPage.css';
+
 import placeholder1 from '../assets/imgs/big-doctors-image.jpg';
 // import placeholder2 from '../assets/imgs/about-doctor-img2.jpg';
 // import placeholder3 from '../assets/imgs/about-doctor-img3.jpg';
 
+const texts = {
+  en: "Showcases",
+  de: "Vitrinen"
+}
+
 const ShowCasesPage = () => {
+  const { language } = useLanguage();
   const [selectedImage, setSelectedImage] = useState(null);
 
-  const cases = [
+  const cases = { en: [
     {
       title: 'Case 1',
       description: 'This is the first case description.',
@@ -30,7 +38,32 @@ const ShowCasesPage = () => {
       testimonial: "“Dr. [Name] did an amazing job! I feel confident and my smile looks great.” - Patient C"
     },
     // Add more cases as needed
-  ];
+  ],
+
+  de: [
+    {
+      title: 'Fall 1',
+      description: 'Dies ist die erste Fallbeschreibung.',
+      images: [placeholder1, placeholder1, placeholder1, placeholder1, placeholder1],
+      details: 'Weitere Details zu Fall 1.',
+      testimonial: "„Dr. [Name] hat einen tollen Job gemacht! Ich fühle mich selbstbewusst und mein Lächeln sieht großartig aus.“ - Patient A"
+    },
+    {
+      title: 'Fall 2',
+      description: 'Dies ist die zweite Fallbeschreibung.',
+      images: [placeholder1, placeholder1, placeholder1],
+      details: 'Weitere Details zu Fall 2.',
+      testimonial: "Dr. [Name] hat einen tollen Job gemacht! Ich fühle mich selbstbewusst und mein Lächeln sieht großartig aus.“ - Patient B"
+    },
+    {
+      title: 'Fall 3',
+      description: 'Dies ist die dritte Fallbeschreibung.',
+      images: [placeholder1, placeholder1, placeholder1, placeholder1, placeholder1],
+      details: 'Weitere Details zu Fall 3.',
+      testimonial: "Dr. [Name] hat einen tollen Job gemacht! Ich fühle mich selbstbewusst und mein Lächeln sieht großartig aus.“ - Patient C"
+    },
+  ]
+}
 
   const handleImageClick = (image) => {
     setSelectedImage(image);
@@ -42,9 +75,9 @@ const ShowCasesPage = () => {
 
   return (
     <div className="showcases-page">
-      <h1>Showcases</h1>
+      <h1>{texts[language]}</h1>
       <div className="case-cards">
-        {cases.map((caseItem, index) => (
+        {cases[language].map((caseItem, index) => (
           <div className="case-card" key={index}>
             <h2>{caseItem.title}</h2>
             <p>{caseItem.description}</p>
