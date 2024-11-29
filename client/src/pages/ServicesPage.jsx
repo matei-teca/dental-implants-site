@@ -3,6 +3,22 @@ import { Link } from "react-router-dom";
 import { useLanguage } from '../LanguageContext';
 import "./styles/ServicesPage.css";
 
+const texts = {
+  en: [
+    {
+      title: "Our Implantology Services",
+      description: "Specialized implant solutions designed for dental practices looking to provide high-quality care to their patients."
+    }
+  ],
+
+  de: [
+    {
+      title: "Unsere Implantologie-Dienstleistungen",
+      description: "Spezialisierte Implantatlösungen für Zahnarztpraxen, die ihren Patienten eine qualitativ hochwertige Versorgung bieten möchten."
+    }
+  ]
+}
+
 const services = {
   
   en: [
@@ -57,18 +73,18 @@ de: [
   },
   {
     id: "bone-grafting",
-    title: "Bone Grafting",
-    description: "Pre-surgical procedures to ensure a solid foundation for implant placement.",
+    title: "Knochentransplantation",
+    description: "Präoperative Verfahren zur Gewährleistung einer soliden Grundlage für die Implantatinsertion.",
   },
   {
     id: "sinus-lifts",
-    title: "Sinus Lifts",
-    description: "Advanced procedures to enhance upper jaw bone structure for secure implants.",
+    title: "Sinuslifte",
+    description: "Fortschrittliche Verfahren zur Verbesserung der Knochenstruktur des Oberkiefers für sichere Implantate.",
   },
   {
     id: "immediate-load-implants",
-    title: "Immediate Load Implants",
-    description: "Allowing patients to receive temporary crowns on the same day as implant placement.",
+    title: "Sofortlastimplantate",
+    description: "Dadurch können Patienten noch am selben Tag, an dem das Implantat eingesetzt wird, provisorische Kronen erhalten.",
   },
 ],
 
@@ -79,8 +95,8 @@ const ServicesPage = () => {
 
   return (
     <div className="services-page">
-      <h1>Our Implantology Services</h1>
-      <p>Specialized implant solutions designed for dental practices looking to provide high-quality care to their patients.</p>
+      <h1>{texts[language][0].title}</h1>
+      <p>{texts[language][0].description}</p>
   
       <div className="service-cards">
         {services[language].map((service) => (
