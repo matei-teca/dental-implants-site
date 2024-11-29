@@ -60,7 +60,9 @@ const texts = {
 };
 
 
-const services = [
+const services = { 
+
+  en: [
   {
     id: "single-tooth-implants",
     title: "Single Tooth Implants",
@@ -75,8 +77,28 @@ const services = [
     id: "full-arch-restoration",
     title: "Full Arch Restoration",
     description: "Complete arch replacements to restore full functionality and aesthetics.",
+  },],
+
+
+  de: [
+  {
+    id: "single-tooth-implants",
+    title: "Einzelzahnimplantate",
+    description: "Zuverlässige Lösungen für den natürlichen Ersatz einzelner fehlender Zähne.",
   },
-];
+  {
+    id: "multiple-teeth-implants",
+    title: "Mehrere Zahnimplantate",
+    description: "Lösungen zur Wiederherstellung mehrerer fehlender Zähne mit einem nahtlosen, langlebigen Finish.",
+  },
+  {
+    id: "full-arch-restoration",
+    title: "Vollständige Wiederherstellung des Zahnbogens",
+    description: "Kompletter Bogenersatz zur Wiederherstellung der vollen Funktionalität und Ästhetik.",
+  },],
+
+}
+  
 
 const LandingPage = () => {
 
@@ -142,7 +164,7 @@ const LandingPage = () => {
           <h2>{texts[language][3].title1}</h2>
         </NavLink>
         <div className="service-cards">
-          {services.map((service) => (
+          {services[language].map((service) => (
             <Link
               key={service.id}
               to={`/services/${service.id}`}
