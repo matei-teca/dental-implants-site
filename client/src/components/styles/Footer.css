@@ -41,9 +41,8 @@
 }
 
 .footer-home-icon {
-  width: 24px; 
+  max-width: 1.55rem;
   filter: invert(100%); 
-  margin-right: 10px;
 }
 
 .footer p {

@@ -1,5 +1,5 @@
 .services-page {
-  padding: 80px 90px;
+  padding: 6rem 7rem;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -10,24 +10,24 @@
 .services-page h1 {
   font-size: 2.5rem;
   color: #008080;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .services-page p {
   color: #666;
   font-size: 1.1rem;
   max-width: 500px;
-  margin: 0 auto 50px;
+  margin: 0 auto 3rem;
 }
 
 .service-cards {
   display: grid;
-  gap: 50px;
+  gap: 3rem;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
 
 .service-card {
-  padding: 25px;
+  padding: 2rem;
   background: #fff;
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
@@ -38,7 +38,7 @@
 .service-card h3 {
   font-size: 1.4rem;
   color: #333;
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
 }
 
 .service-card p {

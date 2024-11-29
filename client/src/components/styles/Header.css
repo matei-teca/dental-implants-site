@@ -7,6 +7,7 @@
   background-color: #fff;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
+  overflow: hidden;
 }
 
 .header:hover {
@@ -32,8 +33,20 @@
   align-items: center;
   color: #333;
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  border-bottom: 2px solid transparent; /* Default: no underline */
   width: 300px;
+
+}
+
+.logo a:hover {
+  color: #008080;
+  border-bottom: 2px solid #008080; /* Underline on hover */
+}
+
+.logo a.active {
+  color: #008080;
+  border-bottom: 2px solid #008080; /* Persistent underline when active */
 }
 
 .logo img {
