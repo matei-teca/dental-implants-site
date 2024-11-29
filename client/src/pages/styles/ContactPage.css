@@ -30,12 +30,6 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
-.contact-info:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  background-color: rgba(0, 0, 0, 0.9);
-}
-
 .contact-info h2 {
   font-size: 1.5rem;
   color: #008080;
@@ -55,10 +49,16 @@
   transition: color 0.3s ease;
 }
 
-.contact-info a:hover {
-  text-decoration: underline;
-  color: #005f5f;
+.contact-info:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.9);
+  transition: 1.5s;
 }
+
+.contact-info:hover a {
+  color: white;
+} 
 
 /* Form Section */
 .contact-form-section {
