@@ -1,0 +1,83 @@
+/* Terms Header */
+.terms-header {
+    text-align: center;
+    padding: 40px 20px;
+    margin-bottom: -40px;
+    padding-top: 0rem;
+  }
+  
+  .terms-header h1 {
+    font-size: 2.5rem;
+    color: #008080;
+    margin-bottom: 0.75rem;
+  }
+  
+  .terms-header p {
+    font-size: 1.1rem;
+    color: #666;
+  }
+  
+  /* Terms Content Section */
+  .terms-content {
+    text-align: left;
+    margin: 0 auto;
+
+    padding-inline: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 1rem;    max-width: 600px;
+    
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  }
+
+  .terms-content section {
+    margin-bottom: 3rem;
+  }
+  
+  .terms-content h2 {
+    font-size: 1.5rem;
+    color: #008080;
+    /* margin-bottom: 1.5rem; */
+    padding: 0.25rem;
+  }
+  
+  .terms-content p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+  
+  .terms-content ul {
+    list-style: disc;
+    margin-left: 20px;
+  }
+  
+  .terms-content li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .terms-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  @media (max-width: 768px) {
+    .terms-header {
+      padding-top: 1rem;
+    }
+  
+    .terms-header h1 {
+      font-size: 1.8rem;
+    }
+  
+    .terms-content {
+      max-width: 90%;
+
+    }
+  }
+  

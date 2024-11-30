@@ -12,6 +12,10 @@ import Testing from './pages/Testing';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
+import ImpressumPage from './pages/ImpressumPage';
+import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
+import TermsPage from './pages/TermsPage';
+
 function App() {
   const { language, toggleLanguage } = useLanguage();
 
@@ -34,6 +38,10 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/showcases" element={<ShowCasesPage />} />
           <Route path="/testing" element={<Testing />} />
+
+          <Route path="/impressum" element={<ImpressumPage />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+          <Route path="/terms" element={<TermsPage />} />
         </Routes>
         <Footer />
       </div>
