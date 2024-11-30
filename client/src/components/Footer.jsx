@@ -30,7 +30,17 @@ const Footer = () => {
         <li><NavLink to="/showcases">{texts[language][3]}</NavLink></li>
         <li><NavLink to="/contact">{texts[language][4]}</NavLink></li>
       </ul>
+      
     </div>
+
+    <div className="footer-nav-legal">
+      <ul>
+          <li><NavLink to="/impressum">Impressum</NavLink></li>
+          <li><NavLink to="/privacy-policy">Privacy Policy</NavLink></li>
+          <li><NavLink to="/terms">Terms of Collaboration</NavLink></li>
+      </ul>
+    </div>
+
     <p>&copy; {new Date().getFullYear()} O.C. Dental Implants</p>
     <p>Contact us at: oana.teca@gmail.com</p>
   </footer>
