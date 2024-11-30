@@ -76,13 +76,19 @@
 
 .footer-nav-legal ul li a {
   text-decoration: underline;
-  color: rgb(137, 137, 170);
+  /* color: #008080; */
+  color: white;
   font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.footer-nav-legal ul li a:hover {
+  /* color: white */
+  text-decoration: none;
 }
 
 .footer-nav-legal ul li a.active {
-  text-decoration: none;
-  color: white;
+  /* color: white; */
   border-bottom: 2px solid white;
 }
 
