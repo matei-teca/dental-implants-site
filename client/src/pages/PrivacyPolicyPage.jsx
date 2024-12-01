@@ -39,11 +39,11 @@ const PrivacyPolicyPage = () => {
     const { language } = useLanguage();
 
     return (
-        <div>
-            <header className="privacy-header">
+        <main role="document">
+            <section className="privacy-header" role="banner">
                 <h1>{texts[language][0].title}</h1>
                 <p>{texts[language][0].description}</p>
-            </header>
+            </section>
             <div className="privacy-info">
                 <section>
                 <h2>{texts[language][1].title}</h2>
@@ -74,7 +74,7 @@ const PrivacyPolicyPage = () => {
                 </section>
 
             </div>
-        </div>
+        </main>
     );
 };
 

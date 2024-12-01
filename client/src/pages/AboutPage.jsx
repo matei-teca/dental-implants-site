@@ -54,8 +54,8 @@ const AboutPage = () => {
   const { language } = useLanguage();
 
   return (
-    <div className="about-page">
-      <section className="about-hero">
+    <main className="about-page" role="document">
+      <section className="about-hero" role="banner">
         <img
           src={aboutDoctorImg4}
           alt="Dr. [Name]"
@@ -69,7 +69,7 @@ const AboutPage = () => {
         </div>
       </section>
 
-      <section className="about-qualifications">
+      <section className="about-qualifications" aria-labelledby="about-qualifications">
         <h2>{texts[language][1].title}</h2>
         <ul>
           <li>{texts[language][1].description[0]}</li>
@@ -81,44 +81,44 @@ const AboutPage = () => {
         </ul>
       </section>
 
-      <section className="about-philosophy">
+      <section className="about-philosophy" aria-labelledby="about-philosophy">
         <h2>{texts[language][2].title}</h2>
         <p>
         {texts[language][2].description}
         </p>
       </section>
 
-      <section className="about-image-section">
+      <section className="about-image-section" aria-label="Doctor's Teamwork Image Section">
         <h2>{texts[language][3].title}</h2>
         <img
           src={bigDoctorsImage}
-          alt="Dr. [Name] Portrait"
+          alt="Doctor Curca working with another doctor image"
           className="discover-image"
         />
       </section>
 
-      <section className="gallery-section">
+      <section className="gallery-section" aria-labelledby="gallery-section">
         <h2>{texts[language][4].title}</h2>
         <div className="image-gallery">
           <img
             src={aboutDoctorImg1}
-            alt="Dr. [Name] 1"
+            alt="Image of the Doctor 1"
           />
           <img
             src={aboutDoctorImg2}
-            alt="Dr. [Name] 2"
+            alt="Image of the Doctor 2"
           />
           <img
             src={aboutDoctorImg3}
-            alt="Dr. [Name] 3"
+            alt="Image of the Doctor 3"
           />
           <img
             src={aboutDoctorImg4}
-            alt="Dr. [Name] 4"
+            alt="Image of the Doctor 4"
           />
         </div>
       </section>
-    </div>
+    </main>
   );
 
 }

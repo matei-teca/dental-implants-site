@@ -11,7 +11,7 @@ const texts = {
       title: "Get in Touch with Dr. Oana Curca Directly",
       description: ["Phone:", "Email:"]
     }, {
-      title: "Or complete the form for an collaboration appointment",
+      title: "Or complete the form for a collaboration appointment",
       description: ["Name", "Email", "Message", "Send Message"],
       descriptionPlaceholder: ["Your Full Name", "Your Email Address", "Your Message"]
     }
@@ -56,19 +56,19 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="contact-page">
-      <section className="contact-header">
+    <main className="contact-page" role="document">
+      <section className="contact-header" role="banner">
         <h1>{texts[language][0].title}</h1>
         <p>{texts[language][0].description}</p>
       </section>
 
-      <section className="contact-info">
+      <section className="contact-info" aria-labelledby="contact-info">
         <h2>{texts[language][1].title}</h2>
         <p><strong>{texts[language][1].description[0]}</strong> <a href="tel:+5555555555">(555) 555-5555</a></p>
         <p><strong>{texts[language][1].description[1]}</strong> <a href="mailto:oana.curca@example.com">oana.curca@example.com</a></p>
       </section>
 
-      <section className="contact-form-section">
+      <section className="contact-form-section" aria-labelledby="contact-form-section">
         <h2>{texts[language][2].title}</h2>
         <form className="contact-form" onSubmit={handleSubmit}>
           <label htmlFor="name">{texts[language][2].description[0]}</label>
@@ -104,10 +104,10 @@ const ContactPage = () => {
             required
           ></textarea>
 
-          <button type="submit" className="contact-submit-button">{texts[language][2].description[3]}</button>
+          <button type="submit" className="contact-submit-button" aria-label="Submit the form">{texts[language][2].description[3]}</button>
         </form>
       </section>
-    </div>
+    </main>
   );
 };
 

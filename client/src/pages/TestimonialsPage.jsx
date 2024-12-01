@@ -5,7 +5,7 @@ import TestimonialsSection from "../components/TestimonialsSection";
 const TestimonialsPage = () => {
 
   return (
-    <div className="testimonials-page">
+    <div className="testimonials-page" role="document">
       <TestimonialsSection />
     </div>
   )

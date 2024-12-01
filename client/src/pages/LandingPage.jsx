@@ -117,8 +117,8 @@ const LandingPage = () => {
 
   return (
 
-    <div className="landing-page">
-      <section className="hero">
+    <main role="document" className="landing-page">
+      <section role="banner" className="hero">
         <h1>
           {texts[language][0].title}
         </h1>
@@ -131,7 +131,7 @@ const LandingPage = () => {
         </NavLink>
       </section>
 
-      <section className="cta-section" id="cta-section">
+      <section className="cta-section" id="cta-section" aria-label="Secondary Banner Section">
         <div className="cta-content">
           <h2>
             {texts[language][1].title}
@@ -143,7 +143,7 @@ const LandingPage = () => {
           <NavLink to="/contact"><button className="cta-button">{texts[language][1].button}</button></NavLink>
         </div>
       </section>
-      <section className="intro">
+      <section className="intro" aria-label="Intro About Doctor Section">
         <div className="intro-text">
           <h2 onClick={scrollToAboutHero} style={{ cursor: "pointer" }}>{texts[language][2].title}</h2>
           <p>
@@ -152,14 +152,14 @@ const LandingPage = () => {
         </div>
         <img
           src={aboutDoctorImg4}
-          alt="Dr. [Name]"
+          alt="Dr. Oana Curca portrait"
           className="intro-image"
           onClick={scrollToAboutHero}
           style={{ cursor: "pointer" }}
         />{" "}
       </section>
 
-      <section className="services">
+      <section className="services" aria-label="Intro Services Section">
         <NavLink to="/services">
           <h2>{texts[language][3].title1}</h2>
         </NavLink>
@@ -178,23 +178,23 @@ const LandingPage = () => {
         </div>
       </section>
 
-      <section className="about-image-section">
+      <section className="about-image-section" aria-label="Doctor's Teamwork Image Section">
         <NavLink to="/about">
           <h2>{texts[language][4].title}</h2>
         </NavLink>
         <img
           src={bigDoctorsImage}
-          alt="Dr. [Name] Portrait"
+          alt="Doctor Curca working with another doctor image"
           className="discover-image"
         />
       </section>
       {/* <HeroCarousel /> */}
 
-      <div style={{ marginBlock: "3rem" }}>
+      <div style={{ marginBlock: "3rem" }} aria-label="Intro Testimonials Section">
         <TestimonialsSection />
       </div>
 
-    </div>
+    </main>
   );
 }
 

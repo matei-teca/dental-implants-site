@@ -11,12 +11,12 @@ const ImpressumPage = () => {
     const { language } = useLanguage();
 
     return (
-        <div>
-            <header className="impressum-header">
+        <main role = "document">
+            <section className="impressum-header" role="header">
                 <h1>Impressum</h1>
                 <p>Legal Notice and Contact Information</p>
-            </header>
-            <div className="impressum-info">
+            </section>
+            <section className="impressum-info">
                 <h2>{texts[language][0]}</h2>
                 <p><strong>{texts[language][1]}</strong> [Your Full Name]</p>
                 <p><strong>{texts[language][2]}</strong> [Your Address]</p>
@@ -24,8 +24,8 @@ const ImpressumPage = () => {
                 <p><strong>{texts[language][4]}</strong> [Your Phone Number]</p>
                 <p><strong>{texts[language][5]}</strong> [Zahnärztekammer registration number]</p>
                 <p><strong>{texts[language][6]}</strong> [Your VAT ID, if applicable]</p>
-            </div>
-        </div>
+            </section>
+        </main>
     );
 };
 

@@ -20,6 +20,7 @@ function App() {
   const { language, toggleLanguage } = useLanguage();
 
   return (
+    <div lang={language} role="application">
     <Router>
       <div>
         <Header />
@@ -46,6 +47,7 @@ function App() {
         <Footer />
       </div>
     </Router>
+    </div>
   );
 }
 

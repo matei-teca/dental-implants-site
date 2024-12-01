@@ -39,14 +39,14 @@ const TestimonialsSection = () => {
   const { language } = useLanguage();
 
   return (
-  <section className="testimonials-section">
+  <main className="testimonials-section" role="document">
 
-      <section className="hero-section">
+      <section className="hero-section" role="banner">
       <Link to="/testimonials"><h1>{texts[language][0].title}</h1></Link>
         <p>{texts[language][0].description}</p>
       </section>
 
-      <section className="testimonials-content">
+      <section className="testimonials-content" aria-labelledby="testimonials-content">
         <div className="testimonial-card">
           <p className="testimonial-quote">{texts[language][1].testimonial}</p>
         </div>
@@ -57,7 +57,7 @@ const TestimonialsSection = () => {
           <p className="testimonial-quote">{texts[language][3].testimonial}</p>
         </div>
       </section>
-  </section>
+  </main>
 
 );}
 

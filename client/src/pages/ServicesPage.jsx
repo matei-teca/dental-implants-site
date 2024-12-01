@@ -94,11 +94,11 @@ const ServicesPage = () => {
   const { language } = useLanguage();
 
   return (
-    <div className="services-page">
-      <h1>{texts[language][0].title}</h1>
+    <main className="services-page" role="document">
+      <h1 role="banner">{texts[language][0].title}</h1>
       <p>{texts[language][0].description}</p>
   
-      <div className="service-cards">
+      <div className="service-cards" aria-labelledby="service-cards">
         {services[language].map((service) => (
           <Link 
             key={service.id} 
@@ -113,7 +113,7 @@ const ServicesPage = () => {
           </Link>
         ))}
       </div>
-    </div>
+    </main>
   );
   
 }

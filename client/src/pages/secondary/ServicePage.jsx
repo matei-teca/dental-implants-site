@@ -11,7 +11,7 @@ const ServicePage = () => {
   }
 
   return (
-    <div className="service-page">
+    <div className="service-page" role = "document">
       <h1>{service.title}</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel risus ac quam

@@ -1,4 +1,4 @@
-import React, { createContext, useState, useContext } from 'react';
+import React, { createContext, useState, useContext, useEffect } from 'react';
 
 const LanguageContext = createContext();
 
@@ -8,6 +8,11 @@ export const LanguageProvider = ({ children }) => {
   const toggleLanguage = () => {
     setLanguage((prev) => (prev === 'en' ? 'de' : 'en'));
   };
+
+  // Notify assistive technologies when language changes
+  useEffect(() => {
+    document.documentElement.lang = language;
+  }, [language]);
 
   return (
     <LanguageContext.Provider value={{ language, toggleLanguage }}>

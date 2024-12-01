@@ -74,9 +74,9 @@ const ShowCasesPage = () => {
   };
 
   return (
-    <div className="showcases-page">
+    <main className="showcases-page" role="document">
       <h1>{texts[language]}</h1>
-      <div className="case-cards">
+      <div className="case-cards" aria-labelledby="case-cards">
         {cases[language].map((caseItem, index) => (
           <div className="case-card" key={index}>
             <h2>{caseItem.title}</h2>
@@ -85,7 +85,7 @@ const ShowCasesPage = () => {
               {caseItem.images.map((image, imgIndex) => (
                 <img
                   src={image}
-                  alt={`${caseItem.title} - ${imgIndex + 1}`}
+                  alt={`${caseItem.title} - image ${imgIndex + 1}`}
                   className="case-image"
                   key={imgIndex}
                   onClick={() => handleImageClick(image)}
@@ -102,7 +102,7 @@ const ShowCasesPage = () => {
 
       {/* Lightbox for displaying selected image */}
       {selectedImage && (
-        <div className="lightbox" onClick={closeLightbox}>
+        <div className="lightbox" onClick={closeLightbox} aria-label="Lightbox for displaying selected image">
           <div className="lightbox-content" onClick={(e) => e.stopPropagation()}>
             <img src={selectedImage} alt="Selected" className="lightbox-image" />
             <button className="lightbox-close" onClick={closeLightbox}>
@@ -111,7 +111,7 @@ const ShowCasesPage = () => {
           </div>
         </div>
       )}
-    </div>
+    </main>
   );
 };
 

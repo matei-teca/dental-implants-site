@@ -70,11 +70,11 @@ const TermsPage = () => {
     const { language } = useLanguage();
 
     return (
-        <div>
-            <header className="terms-header">
+        <main role="document">
+            <section className="terms-header" role="banner">
                 <h1>{texts[language][0].title}</h1>
                 <p>{texts[language][0].description}</p>
-            </header>
+            </section>
             <div className="terms-content">
                 <section>
                     <h2>{texts[language][1].title}</h2>
@@ -121,7 +121,7 @@ const TermsPage = () => {
                     </p>
                 </section>
             </div>
-        </div>
+        </main>
     );
 };
 
